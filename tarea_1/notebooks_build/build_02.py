@@ -57,12 +57,20 @@ ETIQUETAS_NATURALES = {
     "deportes": "deportes",
     "ciencia_tecnologia": "ciencia y tecnología",
 }
+# nombre natural (normalizado) -> id oficial
+ETIQUETAS_NATURALES_INV = {
+    "politica": "politica",
+    "economia": "economia",
+    "deportes": "deportes",
+    "ciencia_y_tecnologia": "ciencia_tecnologia",
+}
+import unicodedata
+
 def a_oficial(nombre_natural):
-    clave = (nombre_natural.lower().replace("y tecnología", "y tecnologia"))
+    clave = unicodedata.normalize("NFKD", nombre_natural.lower())
+    clave = "".join(c for c in clave if not unicodedata.combining(c))
     clave = clave.replace(" ", "_")
     return ETIQUETAS_NATURALES_INV[clave]
-
-ETIQUETAS_NATURALES_INV = {v: k for k, v in ETIQUETAS_NATURALES.items()}
 
 muestra_zs = df.sample(40, random_state=SEED).reset_index(drop=True)
 clasificador_zs = pipeline("zero-shot-classification",

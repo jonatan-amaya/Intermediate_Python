@@ -13,21 +13,24 @@ MODELO_LLM = "Kimi Code (Moonshot AI)"
 FECHA = "2026-10-12"
 
 
-def generar(ruta_etiquetas_json: str, ruta_noticias: str = "datos/noticias.csv",
+def generar(*jsons, ruta_noticias: str = "datos/noticias.csv",
             salida: str = "datos/etiquetas_llm.csv") -> None:
-    with open(ruta_etiquetas_json, encoding="utf-8") as f:
-        etiquetas = json.load(f)  # {titular: [etiqueta_llm, confianza]}
+    etiquetas = {}
+    for ruta in jsons:  # se permiten varios archivos parciales
+        with open(ruta, encoding="utf-8") as f:
+            etiquetas.update(json.load(f))  # {indice_fila: [etiqueta_llm, confianza]}
 
     df = pd.read_csv(ruta_noticias)
     filas, faltantes = [], []
-    for titular in df["titular"]:
-        if titular in etiquetas:
-            etq, conf = etiquetas[titular]
+    for idx, titular in enumerate(df["titular"]):
+        clave = str(idx)
+        if clave in etiquetas:
+            etq, conf = etiquetas[clave]
             filas.append({"titular": titular, "etiqueta_llm": etq,
                           "confianza": conf, "modelo_llm": MODELO_LLM,
                           "fecha": FECHA})
         else:
-            faltantes.append(titular)
+            faltantes.append(f"{idx}: {titular[:80]}")
 
     out = pd.DataFrame(filas)
     out.to_csv(salida, index=False)
@@ -40,4 +43,4 @@ def generar(ruta_etiquetas_json: str, ruta_noticias: str = "datos/noticias.csv",
 
 
 if __name__ == "__main__":
-    generar(sys.argv[1])
+    generar(*sys.argv[1:])

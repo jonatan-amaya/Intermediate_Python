@@ -1,0 +1,8 @@
+{
+  "f1_macro_test": 0.911,
+  "accuracy_test": 0.909,
+  "f1_zero_shot": 0.648,
+  "acuerdo_llm_humano": "20/20",
+  "modelo": "distilbert-base-multilingual-cased",
+  "n_noticias": 439
+}

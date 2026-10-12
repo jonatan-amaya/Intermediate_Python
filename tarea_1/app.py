@@ -88,7 +88,8 @@ with izq:
     st.subheader("Distribución de categorías (filtrada)")
     if len(filtrado):
         conteo = (filtrado["etiqueta"].value_counts().reindex(cats_sel).fillna(0)
-                  .reset_index().rename(columns={"index": "etiqueta", "etiqueta": "n"}))
+                  .reset_index())
+        conteo.columns = ["etiqueta", "n"]
         fig = px.bar(conteo, x="etiqueta", y="n", color="etiqueta",
                      color_discrete_map=COLORES,
                      labels={"etiqueta": "Categoría", "n": "N° de noticias"},
