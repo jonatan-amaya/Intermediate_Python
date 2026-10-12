@@ -1,0 +1,22 @@
+# Tarea 1 – Clasificador de noticias peruanas
+# Python 3.11 (entorno usado: conda env "tarea1")
+#
+# NOTA sobre PyTorch: para CPU, instalar primero desde el índice propio de PyTorch:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+# (en Windows/Linux con GPU, basta con el requirements estándar de abajo).
+
+pandas==3.0.6
+numpy==2.4.6
+scikit-learn==1.9.1
+plotly==7.1.0
+streamlit==1.65.0
+seaborn==0.13.2
+matplotlib==3.11.2
+transformers==5.19.0
+datasets==5.1.0
+accelerate==1.15.0
+requests==2.34.2
+beautifulsoup4==4.15.0
+lxml==6.1.3
+sentencepiece==0.2.2
+torch==2.14.1
