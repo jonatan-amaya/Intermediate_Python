@@ -1,0 +1,12 @@
+# Archivos pesados del modelo (GitHub rechaza >100 MB)
+modelo/*.safetensors
+modelo/*.bin
+modelo/*.pt
+modelo/checkpoint-*/
+modelo/optimizer.pt
+# Respaldo crudo del scraping (no se versiona)
+datos/raw/
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
