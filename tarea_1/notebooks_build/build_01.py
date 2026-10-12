@@ -70,6 +70,10 @@ RUTA_RAW = Path("datos/raw")
 RUTA_RAW.mkdir(parents=True, exist_ok=True)
 (RUTA_RAW / "html").mkdir(exist_ok=True)
 
+# nombre de sección tal como se muestra en el sitio (para el feed, cuando el AMP no lo trae)
+DISPLAY_SECCION = {"politica": "Política", "economia": "Economía",
+                   "deportes": "Deportes", "ciencia": "Ciencia"}
+
 print("Configuración registrada el", FECHA_DESCARGA, "| medio:", MEDIO)
 print("Objetivo:", OBJETIVO_POR_CATEGORIA, "noticias por categoría |",
       len(SECCIONES), "categorías oficiales")"""))
@@ -87,12 +91,12 @@ complementa con:
   salieron del RSS. Solo se usa para *localizar* URLs; el contenido se lee del AMP de LR.
 """))
 
-C.append(("code", """def fetch(url, pausa=PAUSA_VERIFICACION, params=None):
+C.append(("code", """def fetch(url, pausa=PAUSA_VERIFICACION, params=None, timeout=30):
     \"\"\"GET con pausa entre solicitudes y máximo 1 reintento (política de respeto al medio).\"\"\"
     time.sleep(pausa)
     for intento in range(MAX_REINTENTOS + 1):
         try:
-            r = requests.get(url, headers=HEADERS, params=params, timeout=30)
+            r = requests.get(url, headers=HEADERS, params=params, timeout=timeout)
             if r.status_code == 200:
                 return r
             if intento == MAX_REINTENTOS:
@@ -135,7 +139,7 @@ def urls_desde_wayback(seccion, limite=5000):
            f"?url=larepublica.pe/{seccion}/2026/*&output=json"
            "&filter=statuscode:200&collapse=urlkey"
            f"&limit={limite}&from=20260201&to=20261012")
-    r = fetch(cdx, pausa=2.0)
+    r = fetch(cdx, pausa=2.0, timeout=180)   # archive.org responde lento con limit alto
     if r is None or r.status_code != 200:
         return []
     try:
@@ -147,42 +151,54 @@ def urls_desde_wayback(seccion, limite=5000):
     return [fila[2] for fila in datos[1:]]  # columna 'original'
 
 
-# --- a) RSS + b) sitemaps oficiales
-descubiertas = []
-for sec in SECCIONES:
-    for url in urls_desde_rss(sec):
-        descubiertas.append((url, sec, "rss"))
-
-for sec in SECCIONES:
-    for url, lm in urls_desde_sitemap(f"https://larepublica.pe/sitemap/{sec}.xml"):
-        descubiertas.append((url, sec, "sitemap_seccion"))
-for url, lm in urls_desde_sitemap("https://larepublica.pe/sitemap/noticias.xml"):
-    sec = url.split("/")[3] if len(url.split("/")) > 4 else ""
-    if sec in SECCIONES:
-        descubiertas.append((url, sec, "sitemap_noticias"))
+# --- a) RSS + b) sitemaps oficiales (con respaldo crudo para reejecutar sin scrapear)
+RUTA_OFICIALES = RUTA_RAW / "urls_descubiertas_oficiales.csv"
+if RUTA_OFICIALES.exists():                       # reejecución: se reutiliza el respaldo
+    descubiertas = [tuple(fila) for fila in
+                    pd.read_csv(RUTA_OFICIALES).values.tolist()]
+    print(f"Respaldo previo cargado: {len(descubiertas)} URLs (RSS + sitemaps)")
+else:
+    descubiertas = []
+    for sec in SECCIONES:
+        for url in urls_desde_rss(sec):
+            descubiertas.append((url, sec, "rss"))
+    for sec in SECCIONES:
+        for url, lm in urls_desde_sitemap(f"https://larepublica.pe/sitemap/{sec}.xml"):
+            descubiertas.append((url, sec, "sitemap_seccion"))
+    for url, lm in urls_desde_sitemap("https://larepublica.pe/sitemap/noticias.xml"):
+        sec = url.split("/")[3] if len(url.split("/")) > 4 else ""
+        if sec in SECCIONES:
+            descubiertas.append((url, sec, "sitemap_noticias"))
+    pd.DataFrame(descubiertas, columns=["url", "seccion", "fuente"]).to_csv(
+        RUTA_OFICIALES, index=False)
 
 print(f"Tras RSS + sitemaps oficiales: {len(descubiertas)} URLs (con duplicados)")"""))
 
-C.append(("code", """# --- c) Wayback CDX: completar hasta el objetivo por categoría
-random.seed(42)  # reproducibilidad del muestreo
-conteo_actual = pd.Series([s for _, s, _ in descubiertas]).value_counts().to_dict()
+C.append(("code", """# --- c) Wayback CDX: completar hasta el objetivo por categoría (con respaldo crudo)
+RUTA_DESCUBIERTAS = RUTA_RAW / "urls_descubiertas.csv"
+if RUTA_DESCUBIERTAS.exists():                    # reejecución: se reutiliza el respaldo
+    df_desc = pd.read_csv(RUTA_DESCUBIERTAS)
+    print(f"Respaldo previo cargado: {len(df_desc)} URLs descubiertas (todas las fuentes)")
+else:
+    random.seed(42)  # reproducibilidad del muestreo
+    conteo_actual = pd.Series([s for _, s, _ in descubiertas]).value_counts().to_dict()
+    for sec in SECCIONES:
+        faltan = OBJETIVO_POR_CATEGORIA - conteo_actual.get(sec, 0)
+        if faltan <= 0:
+            continue
+        candidatas = urls_desde_wayback(sec)
+        patron = re.compile(rf"^https://larepublica.pe/{sec}/\\d{{4}}/\\d{{2}}/\\d{{2}}/[a-z0-9-]+$")
+        candidatas = [u for u in candidatas if patron.match(u)]
+        random.shuffle(candidatas)
+        ya = {u for u, s, _ in descubiertas if s == sec}
+        for u in candidatas[:faltan + 30]:
+            if u not in ya:
+                descubiertas.append((u, sec, "wayback_cdx"))
+                ya.add(u)
+    df_desc = pd.DataFrame(descubiertas,
+                           columns=["url", "seccion_feed", "fuente_descubrimiento"])
+    df_desc.to_csv(RUTA_DESCUBIERTAS, index=False)
 
-for sec in SECCIONES:
-    faltan = OBJETIVO_POR_CATEGORIA - conteo_actual.get(sec, 0)
-    if faltan <= 0:
-        continue
-    candidatas = urls_desde_wayback(sec)
-    # solo URLs de artículo: /seccion/AAAA/MM/DD/slug
-    patron = re.compile(rf"^https://larepublica.pe/{sec}/\\d{{4}}/\\d{{2}}/\\d{{2}}/[a-z0-9-]+$")
-    candidatas = [u for u in candidatas if patron.match(u)]
-    random.shuffle(candidatas)
-    ya = {u for u, s, _ in descubiertas if s == sec}
-    for u in candidatas[:faltan + 30]:   # margen por duplicados y futuros 404
-        if u not in ya:
-            descubiertas.append((u, sec, "wayback_cdx"))
-            ya.add(u)
-
-df_desc = pd.DataFrame(descubiertas, columns=["url", "seccion_feed", "fuente_descubrimiento"])
 print("Conteo por fuente de descubrimiento:")
 display(df_desc["fuente_descubrimiento"].value_counts().to_frame("n_urls"))
 print("\\nConteo por sección (con duplicados entre fuentes):")
@@ -197,11 +213,7 @@ C.append(("md", """## 2. Limpieza inicial de URLs y verificación de que sean fu
   el estudiante (y cualquier persona) puede abrir desde el CSV.
 """))
 
-C.append(("code", """df_urls = df_desc.drop_duplicates(subset="url").copy()
-n_dup = len(df_desc) - len(df_urls)
-print(f"Duplicados entre fuentes eliminados: {n_dup} | URLs únicas a verificar: {len(df_urls)}")
-
-def url_funcional(url):
+C.append(("code", """def url_funcional(url):
     \"\"\"HEAD liviano; fallback a GET con stream si el servidor rechaza HEAD. Máx. 1 reintento.\"\"\"
     time.sleep(PAUSA_VERIFICACION)
     for intento in range(MAX_REINTENTOS + 1):
@@ -215,20 +227,30 @@ def url_funcional(url):
             time.sleep(PAUSA_VERIFICACION)
     return False
 
-# verificación con progreso visible
-estados, total = [], len(df_urls)
-for i, url in enumerate(df_urls["url"], 1):
-    ok = url_funcional(url)
-    estados.append(ok)
-    if i % 50 == 0 or i == total:
-        print(f"  verificadas {i}/{total} ...")
 
-df_urls["url_funcional"] = estados
-df_urls.to_csv(RUTA_RAW / "urls_verificadas.csv", index=False)
+RUTA_VERIFICADAS = RUTA_RAW / "urls_verificadas.csv"
+if RUTA_VERIFICADAS.exists():                     # reejecución: se reutiliza el respaldo
+    df_urls = pd.read_csv(RUTA_VERIFICADAS)
+    df_urls["url_funcional"] = df_urls["url_funcional"].astype(bool)
+    n_dup = 0
+    print(f"Verificación previa cargada: {len(df_urls)} URLs")
+else:
+    df_urls = df_desc.drop_duplicates(subset="url").copy()
+    n_dup = len(df_desc) - len(df_urls)
+    print(f"Duplicados entre fuentes eliminados: {n_dup} | URLs únicas a verificar: {len(df_urls)}")
+
+    estados, total = [], len(df_urls)
+    for i, url in enumerate(df_urls["url"], 1):
+        ok = url_funcional(url)
+        estados.append(ok)
+        if i % 50 == 0 or i == total:
+            print(f"  verificadas {i}/{total} ...")
+    df_urls["url_funcional"] = estados
+    df_urls.to_csv(RUTA_VERIFICADAS, index=False)
 
 n_ok = int(df_urls["url_funcional"].sum())
-print(f"\\nURLs funcionales: {n_ok} | descartadas por error 404/410 o caída: {total - n_ok}")
-display(df_urls[df_urls["url_funcional"] == False]["seccion_feed"].value_counts().to_frame("descartadas"))"""))
+print(f"\\nURLs funcionales: {n_ok} | descartadas por error 404/410 o caída: {len(df_urls) - n_ok}")
+display(df_urls[~df_urls["url_funcional"]]["seccion_feed"].value_counts().to_frame("descartadas"))"""))
 
 # ----------------------------------------------------------------------------- extracción AMP
 C.append(("md", """## 3. Extracción del contenido (titular, bajada, fecha) vía AMP
@@ -257,16 +279,22 @@ C.append(("code", """def limpiar_texto(t):
     return re.sub(r"\\s+", " ", t).strip()
 
 def extraer_de_amp(url_canonica, seccion_feed):
-    \"\"\"Descarga el AMP de una noticia y extrae titular, bajada, fecha y sección.\"\"\"
+    \"\"\"Obtiene titular, bajada, fecha y sección. Lee del respaldo crudo local si ya existe.\"\"\"
     url_amp = url_canonica.replace("https://larepublica.pe/",
                                    "https://larepublica.pe/amp/", 1)
-    r = fetch(url_amp, pausa=PAUSA_ARTICULO)
-    if r is None or r.status_code != 200:
-        return None, "amp_no_disponible"
     slug = url_canonica.rstrip("/").split("/")[-1]
-    (RUTA_RAW / "html" / f"{seccion_feed}_{slug[:80]}.html").write_bytes(r.content)
+    ruta_local = RUTA_RAW / "html" / f"{seccion_feed}_{slug[:80]}.html"
 
-    soup = BeautifulSoup(r.content, "lxml")
+    if ruta_local.exists():               # reejecución: se parsea el respaldo crudo
+        contenido = ruta_local.read_bytes()
+    else:
+        r = fetch(url_amp, pausa=PAUSA_ARTICULO)
+        if r is None or r.status_code != 200:
+            return None, "amp_no_disponible"
+        contenido = r.content
+        ruta_local.write_bytes(contenido)
+
+    soup = BeautifulSoup(contenido, "lxml")
     h1 = soup.find("h1")
     titular = limpiar_texto(h1.get_text()) if h1 else ""
 
@@ -295,15 +323,16 @@ def extraer_de_amp(url_canonica, seccion_feed):
         "titular": titular,
         "bajada": bajada,
         "medio": MEDIO,
-        "seccion_original": limpiar_texto(seccion_ld) if seccion_ld else seccion_feed,
+        "seccion_original": (limpiar_texto(seccion_ld) if seccion_ld
+                             else DISPLAY_SECCION.get(seccion_feed, seccion_feed)),
         "url": url_canonica,
         "fecha": (fecha[:10] if fecha else None),
         "etiqueta": None,
     }, None"""))
 
 C.append(("code", """pendientes = df_urls[df_urls["url_funcional"]].copy()
-# equilibrar: máximo OBJETIVO_POR_CATEGORIA por sección (las primeras N tras mezclar con semilla)
-pendientes = pendientes.sample(frac=1, random_state=42)
+# criterio reproducible: URLs más recientes primero (la URL contiene la fecha)
+pendientes = pendientes.sort_values("url", ascending=False)
 pendientes = (pendientes.groupby("seccion_feed", group_keys=False)
               .head(OBJETIVO_POR_CATEGORIA))
 
@@ -409,7 +438,7 @@ tabla_mapeo.loc[mask, "etiqueta"] = tabla_mapeo.loc[mask, "normalizada"].map(fal
 print("Tabla de equivalencias seccion_original → etiqueta oficial:")
 display(tabla_mapeo)
 
-dicc_map = dict(zip(tabla_mapeo["seccion_original"], tabla_mapeo["etiqueta"]))
+dicc_map = dict(zip(tabla_mapeo["seccion_original (web/RSS/AMP)"], tabla_mapeo["etiqueta"]))
 df["etiqueta"] = df["seccion_original"].map(dicc_map)
 
 # (d) descarte de noticias que no encajan en las 4 categorías (se reporta, no se inventa categoría)
