@@ -1,0 +1,46 @@
+{
+  "anio_ultimo": 2024,
+  "kpis": {
+    "pobreza_peru_ult": {
+      "valor": 27.6,
+      "anio": 2024
+    },
+    "pobreza_peru_prepandemia": {
+      "valor": 20.2,
+      "anio": 2019
+    },
+    "pobreza_peru_max": {
+      "valor": 58.7,
+      "anio": 2004
+    },
+    "pais_mas_pobre": {
+      "pais": "Honduras",
+      "valor": 62.9,
+      "anio": 2024
+    },
+    "pais_menos_pobre": {
+      "pais": "Uruguay",
+      "valor": 17.3,
+      "anio": 2024
+    },
+    "promedio_region_ult": {
+      "valor": 30.3,
+      "anio": 2024
+    }
+  },
+  "hallazgos": [
+    {
+      "titulo": "PerÃº: la pandemia borrÃ³ una dÃ©cada de avances y la recuperaciÃ³n aÃºn no cierra",
+      "detalle": "La pobreza en PerÃº pasÃ³ de 20.2% en 2019 a 30.1% en 2020 (+9.9 puntos, el mayor salto de la serie) y se ubicÃ³ en 27.6% en 2024, todavÃ­a 7.4 puntos por encima del nivel prepandemia."
+    },
+    {
+      "titulo": "Reducciones estructurales: Ecuador lidera la caÃ­da, Costa Rica la menor",
+      "detalle": "Entre 2000 y 2024, Ecuador redujo la pobreza en 36.4 puntos. En el otro extremo, Costa Rica muestra la menor reducciÃ³n (0.3 puntos en el mismo horizonte). El contraste muestra trayectorias de desarrollo muy distintas en la regiÃ³n."
+    },
+    {
+      "titulo": "Desigualdad: el Gini de PerÃº cayÃ³ ~9 puntos en dos dÃ©cadas, pero sigue por encima de los mejores casos regionales",
+      "detalle": "El Ã­ndice de Gini de PerÃº pasÃ³ de 49.1 en 2000 a 40.1 en 2024 (puesto 12 de 14 paÃ­ses con datos). La caÃ­da es clara, aunque aÃºn dista de referentes como Uruguay (39.0): la desigualdad sigue siendo un desafÃ­o estructural para la movilidad social."
+    }
+  ]
+}
+

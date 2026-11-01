@@ -1,0 +1,45 @@
+{
+  "anio_ultimo": 2024,
+  "kpis": {
+    "pobreza_peru_ult": {
+      "valor": 27.6,
+      "anio": 2024
+    },
+    "pobreza_peru_prepandemia": {
+      "valor": 20.2,
+      "anio": 2019
+    },
+    "pobreza_peru_max": {
+      "valor": 58.7,
+      "anio": 2004
+    },
+    "pais_mas_pobre": {
+      "pais": "Honduras",
+      "valor": 62.9,
+      "anio": 2024
+    },
+    "pais_menos_pobre": {
+      "pais": "Uruguay",
+      "valor": 17.3,
+      "anio": 2024
+    },
+    "promedio_region_ult": {
+      "valor": 30.3,
+      "anio": 2024
+    }
+  },
+  "hallazgos": [
+    {
+      "titulo": "Perú: la pandemia borró una década de avances y la recuperación aún no cierra",
+      "detalle": "La pobreza en Perú pasó de 20.2% en 2019 a 30.1% en 2020 (+9.9 puntos, el mayor salto de la serie) y se ubicó en 27.6% en 2024, todavía 7.4 puntos por encima del nivel prepandemia."
+    },
+    {
+      "titulo": "Reducciones estructurales: Ecuador lidera la caída, Costa Rica la menor",
+      "detalle": "Entre 2000 y 2024, Ecuador redujo la pobreza en 36.4 puntos. En el otro extremo, Costa Rica muestra la menor reducción (0.3 puntos en el mismo horizonte). El contraste muestra trayectorias de desarrollo muy distintas en la región."
+    },
+    {
+      "titulo": "Desigualdad: el Gini de Perú cayó ~9 puntos en dos décadas, pero sigue por encima de los mejores casos regionales",
+      "detalle": "El índice de Gini de Perú pasó de 49.1 en 2000 a 40.1 en 2024 (puesto 12 de 14 países con datos). La caída es clara, aunque aún dista de referentes como Uruguay (39.0): la desigualdad sigue siendo un desafío estructural para la movilidad social."
+    }
+  ]
+}

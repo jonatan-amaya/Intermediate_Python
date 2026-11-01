@@ -1,0 +1,81 @@
+/* Dashboard Tarea 3 - tema oscuro, grid responsive */
+:root {
+  --bg: #0f1620; --panel: #17222f; --panel2: #1d2b3a; --text: #e8eef5;
+  --muted: #93a5b6; --acento: #e63946; --acento2: #2a9d8f; --azul: #4d96ff;
+  --borde: #27394c;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font-family: "Segoe UI", system-ui, Arial, sans-serif; }
+.wrap { max-width: 1200px; margin: 0 auto; padding: 0 18px; }
+a { color: var(--azul); }
+
+.hero { background: linear-gradient(135deg, #12202f 0%, #0f1620 70%);
+  border-bottom: 1px solid var(--borde); padding: 42px 0 30px; }
+.kicker { color: var(--acento2); letter-spacing: .12em; text-transform: uppercase;
+  font-size: .78rem; margin: 0 0 8px; }
+h1 { margin: 0 0 12px; font-size: clamp(1.5rem, 3.4vw, 2.3rem); line-height: 1.15; }
+.sub { color: var(--muted); max-width: 780px; font-size: 1.02rem; }
+.meta { color: var(--muted); font-size: .82rem; }
+
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 14px; margin: 26px 0; }
+.kpi { background: var(--panel); border: 1px solid var(--borde); border-radius: 12px;
+  padding: 16px 18px; border-top: 3px solid var(--acento2); }
+.kpi.roja { border-top-color: var(--acento); }
+.kpi.azul { border-top-color: var(--azul); }
+.kpi .valor { font-size: 1.9rem; font-weight: 700; margin: 4px 0 2px; }
+.kpi .etiqueta { color: var(--muted); font-size: .8rem; }
+.kpi .detalle { color: var(--muted); font-size: .78rem; }
+
+.panel { background: var(--panel); border: 1px solid var(--borde); border-radius: 12px;
+  padding: 18px; margin-bottom: 18px; }
+h2 { font-size: 1.05rem; margin: 0 0 4px; }
+h3 { font-size: .92rem; margin: 12px 0 6px; color: var(--acento2); }
+.tag { background: var(--panel2); color: var(--muted); font-size: .72rem;
+  padding: 2px 8px; border-radius: 20px; margin-left: 6px; vertical-align: middle; }
+.graf { width: 100%; height: 380px; }
+
+.controles { display: grid; grid-template-columns: 2fr 1fr 1.2fr; gap: 22px; }
+.ctrl-tit { display: block; font-size: .85rem; color: var(--muted); margin-bottom: 8px; }
+.lista-paises { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px 10px;
+  max-height: 150px; overflow: auto; font-size: .85rem; }
+.lista-paises label { display: flex; gap: 6px; align-items: center; cursor: pointer; }
+.acciones { margin-top: 8px; display: flex; gap: 8px; }
+.mini { background: var(--panel2); color: var(--text); border: 1px solid var(--borde);
+  border-radius: 8px; padding: 6px 12px; font-size: .8rem; cursor: pointer; }
+.mini:hover { border-color: var(--acento2); }
+input[type="range"] { width: 100%; }
+select { width: 100%; background: var(--panel2); color: var(--text);
+  border: 1px solid var(--borde); border-radius: 8px; padding: 8px; }
+.check { display: block; margin-top: 10px; font-size: .8rem; color: var(--muted); }
+
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.grid .panel { margin-bottom: 0; }
+.grid .mapa { grid-column: 1 / -1; }
+.grid .mapa .graf { height: 460px; }
+
+.tabla-cont { max-height: 320px; overflow: auto; margin-bottom: 10px; }
+table { border-collapse: collapse; width: 100%; font-size: .82rem; }
+th, td { padding: 6px 10px; border-bottom: 1px solid var(--borde); text-align: right; }
+th:first-child, td:first-child { text-align: left; position: sticky; left: 0;
+  background: var(--panel); }
+thead th { position: sticky; top: 0; background: var(--panel2); z-index: 1; }
+tr.fila-peru td { color: #ffd166; font-weight: 600; }
+
+.hallazgos { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px; margin: 22px 0; }
+.hallazgo { background: var(--panel); border: 1px solid var(--borde);
+  border-left: 4px solid var(--acento); border-radius: 12px; padding: 16px 18px; }
+.hallazgo h3 { color: var(--text); margin-top: 0; font-size: .98rem; }
+.hallazgo p { color: var(--muted); font-size: .88rem; }
+
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+.cols p, .cols li { color: var(--muted); font-size: .88rem; line-height: 1.5; }
+code { background: var(--panel2); padding: 1px 6px; border-radius: 6px; font-size: .8rem; }
+.pie { color: var(--muted); font-size: .8rem; text-align: center; padding: 22px 0 30px; }
+
+@media (max-width: 900px) {
+  .controles, .grid, .cols { grid-template-columns: 1fr; }
+  .graf { height: 320px; }
+}

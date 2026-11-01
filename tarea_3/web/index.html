@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pobreza y desigualdad en América Latina — Dashboard</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <p class="kicker">Tarea 3 · Del dato a la historia · Data Science Python</p>
+    <h1>¿Qué tan desigual es América Latina y cómo le fue al Perú?</h1>
+    <p class="sub">Pobreza, desigualdad y desarrollo en 18 países de la región, 2000–2024.
+    Explora el mapa, compara países y años, y descubre por qué la recuperación
+    post-pandemia aún no cierra la brecha.</p>
+    <p class="meta">Cobertura: América Latina y el Caribe (18 países) · 2000–2024 ·
+    Fuente: Banco Mundial (indicadores oficiales, líneas nacionales) ·
+    Autor: Jonatan Amaya</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="kpis" class="kpis" aria-label="Indicadores clave"></section>
+
+  <section class="panel controles" aria-label="Controles">
+    <div class="ctrl paises">
+      <label class="ctrl-tit">1 · Países comparados</label>
+      <div id="lista-paises" class="lista-paises"></div>
+      <div class="acciones">
+        <button id="btn-peru" class="mini">Solo Perú</button>
+        <button id="btn-tipica" class="mini">Selección típica</button>
+        <button id="btn-todos" class="mini">Todos</button>
+      </div>
+    </div>
+    <div class="ctrl">
+      <label class="ctrl-tit" for="rango-anio">2 · Año: <strong id="anio-ver">2024</strong></label>
+      <input type="range" id="rango-anio" min="2000" max="2024" value="2024" step="1">
+    </div>
+    <div class="ctrl">
+      <label class="ctrl-tit" for="sel-indicador">3 · Indicador del mapa y ranking</label>
+      <select id="sel-indicador">
+        <option value="pobreza">Pobreza (% población, línea nacional)</option>
+        <option value="gini">Índice de Gini (desigualdad)</option>
+        <option value="pbi_pc">PBI per cápita (US$ actuales)</option>
+      </select>
+      <label class="check"><input type="checkbox" id="chk-promedio" checked>
+      mostrar promedio regional en la línea temporal</label>
+    </div>
+  </section>
+
+  <section class="grid">
+    <div class="panel mapa"><h2>Mapa de la región <span id="mapa-sub" class="tag"></span></h2>
+      <div id="graf-mapa" class="graf"></div></div>
+    <div class="panel"><h2>Evolución temporal <span class="tag">países seleccionados</span></h2>
+      <div id="graf-linea" class="graf"></div></div>
+    <div class="panel"><h2>Ranking en el año elegido <span id="barras-sub" class="tag"></span></h2>
+      <div id="graf-barras" class="graf"></div></div>
+    <div class="panel"><h2>PBI per cápita vs pobreza <span id="disp-sub" class="tag"></span></h2>
+      <div id="graf-disp" class="graf"></div></div>
+  </section>
+
+  <section class="panel">
+    <h2>Tabla de datos <span id="tabla-sub" class="tag"></span></h2>
+    <div class="tabla-cont"><table id="tabla"></table></div>
+    <button id="btn-csv" class="mini">⬇ Descargar panel completo (CSV)</button>
+  </section>
+
+  <section id="hallazgos" class="hallazgos"></section>
+
+  <section class="panel info">
+    <h2>Metodología, fuentes y limitaciones</h2>
+    <div class="cols">
+      <div>
+        <h3>Metodología</h3>
+        <p>Se descargaron las series anuales 2000–2024 de tres indicadores del Banco
+        Mundial —pobreza monetaria (línea nacional, % de población), índice de Gini y
+        PBI per cápita— para 18 países de América Latina y el Caribe. Los datos se
+        depuraron (se eliminaron duplicados y valores faltantes se dejaron explícitos
+        como nulos), se pivotearon a matrices país × año y se calcularon KPIs y
+        variaciones en puntos porcentuales. Pipeline reproducible en
+        <code>scripts/obtener_datos.py</code>, <code>procesar_datos.py</code> y
+        <code>analizar_datos.py</code>.</p>
+        <h3>Fuentes</h3>
+        <p>Banco Mundial, API pública de indicadores de desarrollo (consultada el
+        2026-11-01): <code>SI.POV.NAHC</code>, <code>SI.POV.GINI</code>,
+        <code>NY.GDP.PCAP.CD</code>. Para Perú, la serie de pobreza coincide con las
+        cifras oficiales del INEI (línea nacional).</p>
+      </div>
+      <div>
+        <h3>Limitaciones</h3>
+        <ul>
+          <li>La pobreza con línea nacional no es estrictamente comparable entre
+          países (cada uno define su umbral); sí lo es la evolución dentro de cada
+          país y el ranking aproximado.</li>
+          <li>Brasil no reporta pobreza con línea nacional al Banco Mundial (sí Gini y
+          PBI); se excluye de los rankings de pobreza (17 países con datos).</li>
+          <li>El Gini tiene años faltantes en algunos países; el ranking usa el último
+          año disponible común (2024) con cobertura parcial (14 países).</li>
+          <li>Los datos 2024 pueden estar sujetos a revisión por el productor
+          oficial.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="pie">
+    <p>Jonatan Amaya · Tarea 3 · Data Science Python ·
+    <a href="https://github.com/jonatan-amaya/Intermediate_Python/tree/main/tarea_3">código fuente</a></p>
+  </footer>
+</main>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

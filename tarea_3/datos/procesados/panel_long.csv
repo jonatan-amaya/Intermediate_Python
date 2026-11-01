@@ -1,0 +1,980 @@
+iso3,pais,anio,indicador,valor
+ARG,Argentina,2024,pobreza,38.1
+ARG,Argentina,2023,pobreza,41.7
+ARG,Argentina,2022,pobreza,39.2
+ARG,Argentina,2021,pobreza,37.3
+ARG,Argentina,2020,pobreza,42.0
+ARG,Argentina,2019,pobreza,35.5
+ARG,Argentina,2018,pobreza,32.0
+ARG,Argentina,2017,pobreza,25.7
+ARG,Argentina,2016,pobreza,30.3
+BOL,Bolivia,2024,pobreza,38.1
+BOL,Bolivia,2023,pobreza,37.3
+BOL,Bolivia,2022,pobreza,37.7
+BOL,Bolivia,2021,pobreza,36.6
+BOL,Bolivia,2020,pobreza,39.3
+BOL,Bolivia,2019,pobreza,37.7
+BOL,Bolivia,2018,pobreza,40.5
+BOL,Bolivia,2017,pobreza,42.8
+BOL,Bolivia,2016,pobreza,43.3
+CHL,Chile,2022,pobreza,6.5
+CHL,Chile,2020,pobreza,10.7
+CHL,Chile,2017,pobreza,8.5
+CHL,Chile,2015,pobreza,11.2
+CHL,Chile,2013,pobreza,13.9
+CHL,Chile,2011,pobreza,21.7
+CHL,Chile,2009,pobreza,24.8
+CHL,Chile,2006,pobreza,28.7
+CHL,Chile,2003,pobreza,35.4
+CHL,Chile,2000,pobreza,36.0
+COL,Colombia,2024,pobreza,31.8
+COL,Colombia,2023,pobreza,34.6
+COL,Colombia,2022,pobreza,36.6
+COL,Colombia,2021,pobreza,39.7
+COL,Colombia,2020,pobreza,43.1
+COL,Colombia,2019,pobreza,36.5
+COL,Colombia,2018,pobreza,35.5
+COL,Colombia,2017,pobreza,35.9
+COL,Colombia,2016,pobreza,36.8
+COL,Colombia,2015,pobreza,36.8
+COL,Colombia,2014,pobreza,37.0
+COL,Colombia,2013,pobreza,38.7
+COL,Colombia,2012,pobreza,41.0
+CRI,Costa Rica,2024,pobreza,20.3
+CRI,Costa Rica,2023,pobreza,24.4
+CRI,Costa Rica,2022,pobreza,25.5
+CRI,Costa Rica,2021,pobreza,26.2
+CRI,Costa Rica,2020,pobreza,30.0
+CRI,Costa Rica,2019,pobreza,23.9
+CRI,Costa Rica,2018,pobreza,22.9
+CRI,Costa Rica,2017,pobreza,22.1
+CRI,Costa Rica,2016,pobreza,22.9
+CRI,Costa Rica,2015,pobreza,23.6
+CRI,Costa Rica,2014,pobreza,24.6
+CRI,Costa Rica,2013,pobreza,23.3
+CRI,Costa Rica,2012,pobreza,23.5
+CRI,Costa Rica,2011,pobreza,24.8
+CRI,Costa Rica,2010,pobreza,24.2
+CRI,Costa Rica,2009,pobreza,18.5
+CRI,Costa Rica,2008,pobreza,17.7
+CRI,Costa Rica,2007,pobreza,16.7
+CRI,Costa Rica,2006,pobreza,20.2
+CRI,Costa Rica,2005,pobreza,21.2
+CRI,Costa Rica,2004,pobreza,21.7
+CRI,Costa Rica,2003,pobreza,18.5
+CRI,Costa Rica,2002,pobreza,20.6
+CRI,Costa Rica,2001,pobreza,20.3
+CRI,Costa Rica,2000,pobreza,20.6
+DOM,Rep. Dominicana,2024,pobreza,19.0
+DOM,Rep. Dominicana,2023,pobreza,23.0
+DOM,Rep. Dominicana,2022,pobreza,27.7
+DOM,Rep. Dominicana,2021,pobreza,30.7
+DOM,Rep. Dominicana,2020,pobreza,30.4
+DOM,Rep. Dominicana,2019,pobreza,25.8
+DOM,Rep. Dominicana,2018,pobreza,28.3
+DOM,Rep. Dominicana,2017,pobreza,31.2
+DOM,Rep. Dominicana,2016,pobreza,34.8
+ECU,Ecuador,2024,pobreza,28.0
+ECU,Ecuador,2023,pobreza,26.0
+ECU,Ecuador,2022,pobreza,25.2
+ECU,Ecuador,2021,pobreza,27.7
+ECU,Ecuador,2020,pobreza,33.0
+ECU,Ecuador,2019,pobreza,25.0
+ECU,Ecuador,2018,pobreza,23.2
+ECU,Ecuador,2017,pobreza,21.5
+ECU,Ecuador,2016,pobreza,22.9
+ECU,Ecuador,2015,pobreza,23.3
+ECU,Ecuador,2014,pobreza,22.5
+ECU,Ecuador,2013,pobreza,25.6
+ECU,Ecuador,2012,pobreza,27.3
+ECU,Ecuador,2011,pobreza,28.6
+ECU,Ecuador,2010,pobreza,32.8
+ECU,Ecuador,2009,pobreza,36.0
+ECU,Ecuador,2008,pobreza,35.1
+ECU,Ecuador,2007,pobreza,36.7
+ECU,Ecuador,2006,pobreza,37.6
+ECU,Ecuador,2005,pobreza,42.2
+ECU,Ecuador,2004,pobreza,44.6
+ECU,Ecuador,2003,pobreza,49.9
+ECU,Ecuador,2001,pobreza,54.9
+ECU,Ecuador,2000,pobreza,64.4
+GTM,Guatemala,2023,pobreza,56.0
+HND,Honduras,2024,pobreza,62.9
+HND,Honduras,2023,pobreza,64.1
+HND,Honduras,2021,pobreza,73.6
+MEX,Mexico,2024,pobreza,29.6
+MEX,Mexico,2022,pobreza,36.3
+MEX,Mexico,2020,pobreza,43.9
+MEX,Mexico,2018,pobreza,41.9
+MEX,Mexico,2016,pobreza,43.2
+NIC,Nicaragua,2016,pobreza,24.9
+NIC,Nicaragua,2014,pobreza,29.6
+NIC,Nicaragua,2009,pobreza,42.5
+NIC,Nicaragua,2005,pobreza,48.3
+NIC,Nicaragua,2001,pobreza,45.8
+PAN,Panama,2023,pobreza,21.7
+PAN,Panama,2022,pobreza,22.2
+PAN,Panama,2021,pobreza,21.8
+PAN,Panama,2019,pobreza,21.5
+PAN,Panama,2018,pobreza,21.4
+PAN,Panama,2017,pobreza,20.7
+PAN,Panama,2016,pobreza,22.1
+PAN,Panama,2015,pobreza,23.0
+PAN,Panama,2014,pobreza,25.6
+PAN,Panama,2013,pobreza,25.8
+PAN,Panama,2012,pobreza,26.5
+PAN,Panama,2011,pobreza,27.6
+PAN,Panama,2010,pobreza,29.8
+PAN,Panama,2009,pobreza,33.4
+PAN,Panama,2008,pobreza,33.8
+PAN,Panama,2007,pobreza,36.5
+PAN,Panama,2006,pobreza,38.3
+PAN,Panama,2005,pobreza,36.6
+PAN,Panama,2000,pobreza,37.9
+PER,Peru,2024,pobreza,27.6
+PER,Peru,2023,pobreza,29.0
+PER,Peru,2022,pobreza,27.5
+PER,Peru,2021,pobreza,25.9
+PER,Peru,2020,pobreza,30.1
+PER,Peru,2019,pobreza,20.2
+PER,Peru,2018,pobreza,20.5
+PER,Peru,2017,pobreza,21.7
+PER,Peru,2016,pobreza,20.7
+PER,Peru,2015,pobreza,21.8
+PER,Peru,2014,pobreza,22.7
+PER,Peru,2013,pobreza,23.9
+PER,Peru,2012,pobreza,25.8
+PER,Peru,2011,pobreza,27.8
+PER,Peru,2010,pobreza,30.8
+PER,Peru,2009,pobreza,33.5
+PER,Peru,2008,pobreza,37.3
+PER,Peru,2007,pobreza,42.4
+PER,Peru,2006,pobreza,49.2
+PER,Peru,2005,pobreza,55.6
+PER,Peru,2004,pobreza,58.7
+PER,Peru,2003,pobreza,52.3
+PER,Peru,2002,pobreza,54.3
+PER,Peru,2001,pobreza,54.8
+PER,Peru,2000,pobreza,48.4
+PRY,Paraguay,2024,pobreza,20.1
+PRY,Paraguay,2023,pobreza,22.7
+PRY,Paraguay,2022,pobreza,25.5
+SLV,El Salvador,2023,pobreza,27.2
+SLV,El Salvador,2022,pobreza,26.6
+SLV,El Salvador,2021,pobreza,24.6
+SLV,El Salvador,2020,pobreza,26.2
+URY,Uruguay,2024,pobreza,17.3
+URY,Uruguay,2023,pobreza,19.7
+URY,Uruguay,2022,pobreza,9.9
+VEN,Venezuela,2015,pobreza,33.1
+VEN,Venezuela,2014,pobreza,29.5
+VEN,Venezuela,2013,pobreza,29.4
+VEN,Venezuela,2012,pobreza,27.2
+VEN,Venezuela,2011,pobreza,27.4
+VEN,Venezuela,2010,pobreza,26.8
+VEN,Venezuela,2009,pobreza,26.4
+VEN,Venezuela,2008,pobreza,27.7
+VEN,Venezuela,2007,pobreza,27.5
+VEN,Venezuela,2006,pobreza,33.1
+VEN,Venezuela,2005,pobreza,42.4
+VEN,Venezuela,2004,pobreza,53.1
+VEN,Venezuela,2003,pobreza,54.0
+VEN,Venezuela,2002,pobreza,41.1
+VEN,Venezuela,2001,pobreza,31.1
+VEN,Venezuela,2000,pobreza,41.6
+ARG,Argentina,2024,gini,42.4
+ARG,Argentina,2023,gini,42.4
+ARG,Argentina,2022,gini,40.7
+ARG,Argentina,2021,gini,42.4
+ARG,Argentina,2020,gini,42.7
+ARG,Argentina,2019,gini,43.3
+ARG,Argentina,2018,gini,41.7
+ARG,Argentina,2017,gini,41.4
+ARG,Argentina,2016,gini,42.3
+ARG,Argentina,2014,gini,41.8
+ARG,Argentina,2013,gini,41.1
+ARG,Argentina,2012,gini,41.4
+ARG,Argentina,2011,gini,42.7
+ARG,Argentina,2010,gini,43.7
+ARG,Argentina,2009,gini,43.8
+ARG,Argentina,2008,gini,45.0
+ARG,Argentina,2007,gini,46.3
+ARG,Argentina,2006,gini,46.4
+ARG,Argentina,2005,gini,47.8
+ARG,Argentina,2004,gini,48.5
+ARG,Argentina,2003,gini,51.0
+ARG,Argentina,2002,gini,53.8
+ARG,Argentina,2001,gini,53.3
+ARG,Argentina,2000,gini,51.0
+BOL,Bolivia,2024,gini,40.9
+BOL,Bolivia,2023,gini,42.1
+BOL,Bolivia,2022,gini,41.2
+BOL,Bolivia,2021,gini,40.9
+BOL,Bolivia,2020,gini,43.6
+BOL,Bolivia,2019,gini,41.6
+BOL,Bolivia,2018,gini,42.6
+BOL,Bolivia,2017,gini,44.6
+BOL,Bolivia,2016,gini,45.2
+BOL,Bolivia,2015,gini,46.7
+BOL,Bolivia,2014,gini,47.8
+BOL,Bolivia,2013,gini,47.6
+BOL,Bolivia,2012,gini,46.6
+BOL,Bolivia,2011,gini,46.1
+BOL,Bolivia,2009,gini,49.2
+BOL,Bolivia,2008,gini,50.8
+BOL,Bolivia,2007,gini,54.5
+BOL,Bolivia,2006,gini,56.7
+BOL,Bolivia,2005,gini,58.5
+BOL,Bolivia,2004,gini,55.0
+BOL,Bolivia,2002,gini,59.3
+BOL,Bolivia,2001,gini,57.4
+BOL,Bolivia,2000,gini,61.6
+BRA,Brasil,2024,gini,50.3
+BRA,Brasil,2023,gini,51.5
+BRA,Brasil,2022,gini,51.9
+BRA,Brasil,2021,gini,52.9
+BRA,Brasil,2020,gini,48.8
+BRA,Brasil,2019,gini,53.5
+BRA,Brasil,2018,gini,53.9
+BRA,Brasil,2017,gini,53.3
+BRA,Brasil,2016,gini,53.4
+BRA,Brasil,2015,gini,51.9
+BRA,Brasil,2014,gini,52.1
+BRA,Brasil,2013,gini,52.7
+BRA,Brasil,2012,gini,53.4
+BRA,Brasil,2011,gini,52.9
+BRA,Brasil,2009,gini,53.7
+BRA,Brasil,2008,gini,54.0
+BRA,Brasil,2007,gini,54.9
+BRA,Brasil,2006,gini,55.6
+BRA,Brasil,2005,gini,56.3
+BRA,Brasil,2004,gini,56.5
+BRA,Brasil,2003,gini,57.6
+BRA,Brasil,2002,gini,58.1
+BRA,Brasil,2001,gini,58.4
+CHL,Chile,2024,gini,43.0
+CHL,Chile,2022,gini,43.2
+CHL,Chile,2020,gini,47.0
+CHL,Chile,2017,gini,45.3
+CHL,Chile,2015,gini,45.3
+CHL,Chile,2013,gini,46.8
+CHL,Chile,2011,gini,46.9
+CHL,Chile,2009,gini,47.4
+CHL,Chile,2006,gini,47.7
+CHL,Chile,2003,gini,51.5
+CHL,Chile,2000,gini,52.8
+COL,Colombia,2024,gini,54.4
+COL,Colombia,2023,gini,54.6
+COL,Colombia,2022,gini,54.8
+COL,Colombia,2021,gini,55.1
+COL,Colombia,2020,gini,54.4
+COL,Colombia,2019,gini,52.5
+COL,Colombia,2018,gini,51.6
+COL,Colombia,2017,gini,50.9
+COL,Colombia,2016,gini,51.7
+COL,Colombia,2015,gini,52.0
+COL,Colombia,2014,gini,53.6
+COL,Colombia,2013,gini,53.5
+COL,Colombia,2012,gini,53.6
+COL,Colombia,2011,gini,53.3
+COL,Colombia,2010,gini,54.4
+COL,Colombia,2009,gini,54.1
+COL,Colombia,2008,gini,55.0
+COL,Colombia,2005,gini,53.9
+COL,Colombia,2004,gini,55.0
+COL,Colombia,2003,gini,53.6
+COL,Colombia,2002,gini,56.0
+COL,Colombia,2001,gini,57.3
+COL,Colombia,2000,gini,58.4
+CRI,Costa Rica,2024,gini,45.8
+CRI,Costa Rica,2023,gini,46.7
+CRI,Costa Rica,2022,gini,47.2
+CRI,Costa Rica,2021,gini,48.7
+CRI,Costa Rica,2020,gini,49.2
+CRI,Costa Rica,2019,gini,48.2
+CRI,Costa Rica,2018,gini,48.0
+CRI,Costa Rica,2017,gini,48.3
+CRI,Costa Rica,2016,gini,48.7
+CRI,Costa Rica,2015,gini,48.4
+CRI,Costa Rica,2014,gini,48.6
+CRI,Costa Rica,2013,gini,49.2
+CRI,Costa Rica,2012,gini,48.4
+CRI,Costa Rica,2011,gini,48.8
+CRI,Costa Rica,2010,gini,48.0
+CRI,Costa Rica,2009,gini,50.6
+CRI,Costa Rica,2008,gini,48.6
+CRI,Costa Rica,2007,gini,49.3
+CRI,Costa Rica,2006,gini,49.3
+CRI,Costa Rica,2005,gini,47.5
+CRI,Costa Rica,2004,gini,48.4
+CRI,Costa Rica,2003,gini,49.3
+CRI,Costa Rica,2002,gini,51.8
+CRI,Costa Rica,2001,gini,51.5
+CRI,Costa Rica,2000,gini,47.4
+DOM,Rep. Dominicana,2024,gini,39.0
+DOM,Rep. Dominicana,2023,gini,38.4
+DOM,Rep. Dominicana,2022,gini,37.0
+DOM,Rep. Dominicana,2021,gini,38.5
+DOM,Rep. Dominicana,2020,gini,39.6
+DOM,Rep. Dominicana,2019,gini,41.9
+DOM,Rep. Dominicana,2018,gini,43.7
+DOM,Rep. Dominicana,2017,gini,42.2
+DOM,Rep. Dominicana,2016,gini,45.7
+DOM,Rep. Dominicana,2015,gini,45.2
+DOM,Rep. Dominicana,2014,gini,44.3
+DOM,Rep. Dominicana,2013,gini,47.7
+DOM,Rep. Dominicana,2012,gini,46.1
+DOM,Rep. Dominicana,2011,gini,47.7
+DOM,Rep. Dominicana,2010,gini,47.3
+DOM,Rep. Dominicana,2009,gini,48.9
+DOM,Rep. Dominicana,2008,gini,48.1
+DOM,Rep. Dominicana,2007,gini,48.9
+DOM,Rep. Dominicana,2006,gini,52.0
+DOM,Rep. Dominicana,2005,gini,50.0
+DOM,Rep. Dominicana,2004,gini,52.1
+DOM,Rep. Dominicana,2003,gini,52.1
+DOM,Rep. Dominicana,2002,gini,49.7
+DOM,Rep. Dominicana,2001,gini,50.0
+DOM,Rep. Dominicana,2000,gini,51.5
+ECU,Ecuador,2024,gini,45.2
+ECU,Ecuador,2023,gini,44.6
+ECU,Ecuador,2022,gini,45.5
+ECU,Ecuador,2021,gini,45.8
+ECU,Ecuador,2020,gini,47.3
+ECU,Ecuador,2019,gini,45.7
+ECU,Ecuador,2018,gini,45.4
+ECU,Ecuador,2017,gini,44.7
+ECU,Ecuador,2016,gini,45.0
+ECU,Ecuador,2015,gini,46.0
+ECU,Ecuador,2014,gini,45.0
+ECU,Ecuador,2013,gini,46.9
+ECU,Ecuador,2012,gini,46.1
+ECU,Ecuador,2011,gini,45.9
+ECU,Ecuador,2010,gini,48.8
+ECU,Ecuador,2009,gini,48.5
+ECU,Ecuador,2008,gini,49.8
+ECU,Ecuador,2007,gini,53.4
+ECU,Ecuador,2006,gini,52.3
+ECU,Ecuador,2005,gini,53.1
+ECU,Ecuador,2004,gini,53.9
+ECU,Ecuador,2003,gini,53.5
+ECU,Ecuador,2000,gini,56.3
+GTM,Guatemala,2023,gini,45.2
+GTM,Guatemala,2014,gini,48.3
+GTM,Guatemala,2006,gini,54.5
+GTM,Guatemala,2000,gini,54.2
+HND,Honduras,2024,gini,45.7
+HND,Honduras,2023,gini,46.8
+HND,Honduras,2019,gini,48.2
+HND,Honduras,2018,gini,48.9
+HND,Honduras,2017,gini,49.4
+HND,Honduras,2016,gini,49.8
+HND,Honduras,2015,gini,49.2
+HND,Honduras,2014,gini,49.9
+HND,Honduras,2013,gini,50.0
+HND,Honduras,2012,gini,53.4
+HND,Honduras,2011,gini,52.6
+HND,Honduras,2010,gini,53.1
+HND,Honduras,2009,gini,51.3
+HND,Honduras,2008,gini,55.5
+HND,Honduras,2007,gini,55.8
+HND,Honduras,2006,gini,57.5
+HND,Honduras,2005,gini,59.5
+HND,Honduras,2004,gini,58.1
+HND,Honduras,2003,gini,58.1
+HND,Honduras,2002,gini,55.7
+HND,Honduras,2001,gini,55.4
+MEX,Mexico,2024,gini,42.6
+MEX,Mexico,2022,gini,43.5
+MEX,Mexico,2020,gini,44.6
+MEX,Mexico,2018,gini,46.0
+MEX,Mexico,2016,gini,46.9
+MEX,Mexico,2014,gini,48.9
+MEX,Mexico,2012,gini,49.6
+MEX,Mexico,2010,gini,47.7
+MEX,Mexico,2008,gini,50.8
+MEX,Mexico,2006,gini,49.7
+MEX,Mexico,2005,gini,50.9
+MEX,Mexico,2004,gini,50.3
+MEX,Mexico,2002,gini,50.6
+MEX,Mexico,2000,gini,53.4
+NIC,Nicaragua,2014,gini,46.2
+NIC,Nicaragua,2009,gini,43.9
+NIC,Nicaragua,2005,gini,48.8
+NIC,Nicaragua,2001,gini,52.9
+PAN,Panama,2024,gini,49.7
+PAN,Panama,2023,gini,48.9
+PAN,Panama,2021,gini,50.9
+PAN,Panama,2019,gini,49.8
+PAN,Panama,2018,gini,49.2
+PAN,Panama,2017,gini,49.9
+PAN,Panama,2016,gini,50.4
+PAN,Panama,2015,gini,50.8
+PAN,Panama,2014,gini,50.5
+PAN,Panama,2013,gini,51.5
+PAN,Panama,2012,gini,51.7
+PAN,Panama,2011,gini,51.3
+PAN,Panama,2010,gini,51.6
+PAN,Panama,2009,gini,51.8
+PAN,Panama,2008,gini,52.7
+PAN,Panama,2007,gini,52.7
+PAN,Panama,2006,gini,54.6
+PAN,Panama,2005,gini,53.8
+PAN,Panama,2004,gini,54.8
+PAN,Panama,2003,gini,55.6
+PAN,Panama,2002,gini,56.1
+PAN,Panama,2001,gini,56.7
+PAN,Panama,2000,gini,56.6
+PER,Peru,2024,gini,40.1
+PER,Peru,2023,gini,40.7
+PER,Peru,2022,gini,40.3
+PER,Peru,2021,gini,40.1
+PER,Peru,2020,gini,43.7
+PER,Peru,2019,gini,41.5
+PER,Peru,2018,gini,42.4
+PER,Peru,2017,gini,43.3
+PER,Peru,2016,gini,43.6
+PER,Peru,2015,gini,43.4
+PER,Peru,2014,gini,43.1
+PER,Peru,2013,gini,43.9
+PER,Peru,2012,gini,44.4
+PER,Peru,2011,gini,44.7
+PER,Peru,2010,gini,45.5
+PER,Peru,2009,gini,47.0
+PER,Peru,2008,gini,47.5
+PER,Peru,2007,gini,50.0
+PER,Peru,2006,gini,50.3
+PER,Peru,2005,gini,50.4
+PER,Peru,2004,gini,49.9
+PER,Peru,2003,gini,53.1
+PER,Peru,2002,gini,53.6
+PER,Peru,2001,gini,51.3
+PER,Peru,2000,gini,49.1
+PRY,Paraguay,2024,gini,44.2
+PRY,Paraguay,2023,gini,44.2
+PRY,Paraguay,2022,gini,44.6
+PRY,Paraguay,2021,gini,42.9
+PRY,Paraguay,2020,gini,43.5
+PRY,Paraguay,2019,gini,45.7
+PRY,Paraguay,2018,gini,46.0
+PRY,Paraguay,2017,gini,48.5
+PRY,Paraguay,2016,gini,47.9
+PRY,Paraguay,2015,gini,47.6
+PRY,Paraguay,2014,gini,50.7
+PRY,Paraguay,2013,gini,47.9
+PRY,Paraguay,2012,gini,47.6
+PRY,Paraguay,2011,gini,52.3
+PRY,Paraguay,2010,gini,51.0
+PRY,Paraguay,2009,gini,49.1
+PRY,Paraguay,2008,gini,50.7
+PRY,Paraguay,2007,gini,53.0
+PRY,Paraguay,2006,gini,53.0
+PRY,Paraguay,2005,gini,51.4
+PRY,Paraguay,2004,gini,52.3
+PRY,Paraguay,2003,gini,54.9
+PRY,Paraguay,2002,gini,57.3
+PRY,Paraguay,2001,gini,54.6
+SLV,El Salvador,2023,gini,39.8
+SLV,El Salvador,2022,gini,38.8
+SLV,El Salvador,2021,gini,39.0
+SLV,El Salvador,2019,gini,38.8
+SLV,El Salvador,2018,gini,38.6
+SLV,El Salvador,2017,gini,38.0
+SLV,El Salvador,2016,gini,40.0
+SLV,El Salvador,2015,gini,40.6
+SLV,El Salvador,2014,gini,41.6
+SLV,El Salvador,2013,gini,43.4
+SLV,El Salvador,2012,gini,41.8
+SLV,El Salvador,2011,gini,42.3
+SLV,El Salvador,2010,gini,43.5
+SLV,El Salvador,2009,gini,45.8
+SLV,El Salvador,2008,gini,46.9
+SLV,El Salvador,2007,gini,45.2
+SLV,El Salvador,2006,gini,45.7
+SLV,El Salvador,2005,gini,48.5
+SLV,El Salvador,2004,gini,47.8
+SLV,El Salvador,2003,gini,50.4
+SLV,El Salvador,2002,gini,51.9
+SLV,El Salvador,2001,gini,51.3
+SLV,El Salvador,2000,gini,51.5
+URY,Uruguay,2024,gini,40.0
+URY,Uruguay,2023,gini,40.9
+URY,Uruguay,2022,gini,40.6
+URY,Uruguay,2021,gini,40.8
+URY,Uruguay,2020,gini,40.2
+URY,Uruguay,2019,gini,39.7
+URY,Uruguay,2018,gini,39.7
+URY,Uruguay,2017,gini,39.5
+URY,Uruguay,2016,gini,39.7
+URY,Uruguay,2015,gini,40.1
+URY,Uruguay,2014,gini,40.1
+URY,Uruguay,2013,gini,40.5
+URY,Uruguay,2012,gini,39.9
+URY,Uruguay,2011,gini,42.2
+URY,Uruguay,2010,gini,44.5
+URY,Uruguay,2009,gini,45.5
+URY,Uruguay,2008,gini,45.1
+URY,Uruguay,2007,gini,46.4
+URY,Uruguay,2006,gini,45.9
+URY,Uruguay,2005,gini,44.7
+URY,Uruguay,2004,gini,45.9
+URY,Uruguay,2003,gini,45.0
+URY,Uruguay,2002,gini,45.5
+URY,Uruguay,2001,gini,45.0
+URY,Uruguay,2000,gini,43.4
+VEN,Venezuela,2006,gini,44.7
+VEN,Venezuela,2005,gini,49.3
+VEN,Venezuela,2004,gini,47.3
+VEN,Venezuela,2003,gini,47.9
+VEN,Venezuela,2002,gini,48.9
+VEN,Venezuela,2001,gini,47.2
+ARG,Argentina,2024,pbi_pc,13969.78
+ARG,Argentina,2023,pbi_pc,14261.85
+ARG,Argentina,2022,pbi_pc,13962.19
+ARG,Argentina,2021,pbi_pc,10738.02
+ARG,Argentina,2020,pbi_pc,8535.6
+ARG,Argentina,2019,pbi_pc,9955.97
+ARG,Argentina,2018,pbi_pc,11752.8
+ARG,Argentina,2017,pbi_pc,14532.5
+ARG,Argentina,2016,pbi_pc,12699.96
+ARG,Argentina,2015,pbi_pc,13679.63
+ARG,Argentina,2014,pbi_pc,12233.14
+ARG,Argentina,2013,pbi_pc,12963.68
+ARG,Argentina,2012,pbi_pc,12949.72
+ARG,Argentina,2011,pbi_pc,12704.28
+ARG,Argentina,2010,pbi_pc,10260.13
+ARG,Argentina,2009,pbi_pc,8150.24
+ARG,Argentina,2008,pbi_pc,8944.11
+ARG,Argentina,2007,pbi_pc,7185.25
+ARG,Argentina,2006,pbi_pc,5869.38
+ARG,Argentina,2005,pbi_pc,5067.65
+ARG,Argentina,2004,pbi_pc,4242.02
+ARG,Argentina,2003,pbi_pc,3320.48
+ARG,Argentina,2002,pbi_pc,2569.7
+ARG,Argentina,2001,pbi_pc,7141.48
+ARG,Argentina,2000,pbi_pc,7637.01
+BOL,Bolivia,2024,pbi_pc,4421.17
+BOL,Bolivia,2023,pbi_pc,4274.71
+BOL,Bolivia,2022,pbi_pc,4219.46
+BOL,Bolivia,2021,pbi_pc,4010.76
+BOL,Bolivia,2020,pbi_pc,3580.97
+BOL,Bolivia,2019,pbi_pc,4203.15
+BOL,Bolivia,2018,pbi_pc,4206.86
+BOL,Bolivia,2017,pbi_pc,4048.4
+BOL,Bolivia,2016,pbi_pc,3035.87
+BOL,Bolivia,2015,pbi_pc,2996.01
+BOL,Bolivia,2014,pbi_pc,3041.44
+BOL,Bolivia,2013,pbi_pc,2870.02
+BOL,Bolivia,2012,pbi_pc,2575.6
+BOL,Bolivia,2011,pbi_pc,2315.52
+BOL,Bolivia,2010,pbi_pc,1929.78
+BOL,Bolivia,2009,pbi_pc,1731.18
+BOL,Bolivia,2008,pbi_pc,1692.67
+BOL,Bolivia,2007,pbi_pc,1354.55
+BOL,Bolivia,2006,pbi_pc,1202.71
+BOL,Bolivia,2005,pbi_pc,1020.12
+BOL,Bolivia,2004,pbi_pc,953.19
+BOL,Bolivia,2003,pbi_pc,893.01
+BOL,Bolivia,2002,pbi_pc,888.22
+BOL,Bolivia,2001,pbi_pc,930.17
+BOL,Bolivia,2000,pbi_pc,975.78
+BRA,Brasil,2024,pbi_pc,10310.55
+BRA,Brasil,2023,pbi_pc,10377.59
+BRA,Brasil,2022,pbi_pc,9281.33
+BRA,Brasil,2021,pbi_pc,7972.54
+BRA,Brasil,2020,pbi_pc,7074.19
+BRA,Brasil,2019,pbi_pc,9029.83
+BRA,Brasil,2018,pbi_pc,9300.66
+BRA,Brasil,2017,pbi_pc,10080.51
+BRA,Brasil,2016,pbi_pc,8836.29
+BRA,Brasil,2015,pbi_pc,8936.2
+BRA,Brasil,2014,pbi_pc,12274.99
+BRA,Brasil,2013,pbi_pc,12458.89
+BRA,Brasil,2012,pbi_pc,12521.72
+BRA,Brasil,2011,pbi_pc,13396.62
+BRA,Brasil,2010,pbi_pc,11403.28
+BRA,Brasil,2009,pbi_pc,8678.66
+BRA,Brasil,2008,pbi_pc,8908.33
+BRA,Brasil,2007,pbi_pc,7409.69
+BRA,Brasil,2006,pbi_pc,5934.14
+BRA,Brasil,2005,pbi_pc,4827.78
+BRA,Brasil,2004,pbi_pc,3663.82
+BRA,Brasil,2003,pbi_pc,3090.61
+BRA,Brasil,2002,pbi_pc,2855.94
+BRA,Brasil,2001,pbi_pc,3176.29
+BRA,Brasil,2000,pbi_pc,3766.55
+CHL,Chile,2024,pbi_pc,16658.97
+CHL,Chile,2023,pbi_pc,17081.52
+CHL,Chile,2022,pbi_pc,15399.1
+CHL,Chile,2021,pbi_pc,16216.18
+CHL,Chile,2020,pbi_pc,13117.99
+CHL,Chile,2019,pbi_pc,14496.93
+CHL,Chile,2018,pbi_pc,15659.48
+CHL,Chile,2017,pbi_pc,14879.91
+CHL,Chile,2016,pbi_pc,13649.85
+CHL,Chile,2015,pbi_pc,13433.92
+CHL,Chile,2014,pbi_pc,14529.68
+CHL,Chile,2013,pbi_pc,15683.55
+CHL,Chile,2012,pbi_pc,15241.91
+CHL,Chile,2011,pbi_pc,14487.39
+CHL,Chile,2010,pbi_pc,12632.87
+CHL,Chile,2009,pbi_pc,10098.8
+CHL,Chile,2008,pbi_pc,10683.22
+CHL,Chile,2007,pbi_pc,10346.41
+CHL,Chile,2006,pbi_pc,9318.66
+CHL,Chile,2005,pbi_pc,7480.32
+CHL,Chile,2004,pbi_pc,6120.59
+CHL,Chile,2003,pbi_pc,4773.4
+CHL,Chile,2002,pbi_pc,4430.85
+CHL,Chile,2001,pbi_pc,4563.6
+CHL,Chile,2000,pbi_pc,5052.99
+COL,Colombia,2024,pbi_pc,7951.09
+COL,Colombia,2023,pbi_pc,7012.49
+COL,Colombia,2022,pbi_pc,6680.45
+COL,Colombia,2021,pbi_pc,6222.62
+COL,Colombia,2020,pbi_pc,5339.69
+COL,Colombia,2019,pbi_pc,6472.55
+COL,Colombia,2018,pbi_pc,6816.97
+COL,Colombia,2017,pbi_pc,6479.53
+COL,Colombia,2016,pbi_pc,5959.84
+COL,Colombia,2015,pbi_pc,6248.51
+COL,Colombia,2014,pbi_pc,8187.21
+COL,Colombia,2013,pbi_pc,8279.1
+COL,Colombia,2012,pbi_pc,8108.6
+COL,Colombia,2011,pbi_pc,7400.99
+COL,Colombia,2010,pbi_pc,6398.3
+COL,Colombia,2009,pbi_pc,5250.97
+COL,Colombia,2008,pbi_pc,5541.84
+COL,Colombia,2007,pbi_pc,4769.93
+COL,Colombia,2006,pbi_pc,3789.85
+COL,Colombia,2005,pbi_pc,3456.07
+COL,Colombia,2004,pbi_pc,2818.57
+COL,Colombia,2003,pbi_pc,2311.94
+COL,Colombia,2002,pbi_pc,2428.93
+COL,Colombia,2001,pbi_pc,2472.99
+COL,Colombia,2000,pbi_pc,2555.01
+CRI,Costa Rica,2024,pbi_pc,18853.28
+CRI,Costa Rica,2023,pbi_pc,17140.77
+CRI,Costa Rica,2022,pbi_pc,13971.76
+CRI,Costa Rica,2021,pbi_pc,12962.27
+CRI,Costa Rica,2020,pbi_pc,12475.69
+CRI,Costa Rica,2019,pbi_pc,12951.86
+CRI,Costa Rica,2018,pbi_pc,12620.02
+CRI,Costa Rica,2017,pbi_pc,12317.09
+CRI,Costa Rica,2016,pbi_pc,12091.03
+CRI,Costa Rica,2015,pbi_pc,11714.71
+CRI,Costa Rica,2014,pbi_pc,10911.5
+CRI,Costa Rica,2013,pbi_pc,10803.24
+CRI,Costa Rica,2012,pbi_pc,10127.0
+CRI,Costa Rica,2011,pbi_pc,9276.39
+CRI,Costa Rica,2010,pbi_pc,8265.79
+CRI,Costa Rica,2009,pbi_pc,6832.7
+CRI,Costa Rica,2008,pbi_pc,6937.24
+CRI,Costa Rica,2007,pbi_pc,6137.71
+CRI,Costa Rica,2006,pbi_pc,5256.6
+CRI,Costa Rica,2005,pbi_pc,4703.01
+CRI,Costa Rica,2004,pbi_pc,4431.01
+CRI,Costa Rica,2003,pbi_pc,4173.15
+CRI,Costa Rica,2002,pbi_pc,4067.72
+CRI,Costa Rica,2001,pbi_pc,3985.13
+CRI,Costa Rica,2000,pbi_pc,3812.75
+DOM,Rep. Dominicana,2024,pbi_pc,10875.66
+DOM,Rep. Dominicana,2023,pbi_pc,10630.43
+DOM,Rep. Dominicana,2022,pbi_pc,10104.25
+DOM,Rep. Dominicana,2021,pbi_pc,8527.08
+DOM,Rep. Dominicana,2020,pbi_pc,7135.22
+DOM,Rep. Dominicana,2019,pbi_pc,8183.02
+DOM,Rep. Dominicana,2018,pbi_pc,7882.98
+DOM,Rep. Dominicana,2017,pbi_pc,7412.72
+DOM,Rep. Dominicana,2016,pbi_pc,7160.44
+DOM,Rep. Dominicana,2015,pbi_pc,6800.95
+DOM,Rep. Dominicana,2014,pbi_pc,6496.45
+DOM,Rep. Dominicana,2013,pbi_pc,6136.59
+DOM,Rep. Dominicana,2012,pbi_pc,6013.82
+DOM,Rep. Dominicana,2011,pbi_pc,5826.51
+DOM,Rep. Dominicana,2010,pbi_pc,5478.62
+DOM,Rep. Dominicana,2009,pbi_pc,4973.95
+DOM,Rep. Dominicana,2008,pbi_pc,5023.59
+DOM,Rep. Dominicana,2007,pbi_pc,4649.65
+DOM,Rep. Dominicana,2006,pbi_pc,4055.14
+DOM,Rep. Dominicana,2005,pbi_pc,3878.31
+DOM,Rep. Dominicana,2004,pbi_pc,2451.69
+DOM,Rep. Dominicana,2003,pbi_pc,2383.26
+DOM,Rep. Dominicana,2002,pbi_pc,3065.6
+DOM,Rep. Dominicana,2001,pbi_pc,2935.89
+DOM,Rep. Dominicana,2000,pbi_pc,2831.46
+ECU,Ecuador,2024,pbi_pc,6826.53
+ECU,Ecuador,2023,pbi_pc,6718.14
+ECU,Ecuador,2022,pbi_pc,6515.59
+ECU,Ecuador,2021,pbi_pc,6061.32
+ECU,Ecuador,2020,pbi_pc,5463.65
+ECU,Ecuador,2019,pbi_pc,6205.06
+ECU,Ecuador,2018,pbi_pc,6303.92
+ECU,Ecuador,2017,pbi_pc,6233.32
+ECU,Ecuador,2016,pbi_pc,5917.64
+ECU,Ecuador,2015,pbi_pc,5976.16
+ECU,Ecuador,2014,pbi_pc,6405.8
+ECU,Ecuador,2013,pbi_pc,6109.29
+ECU,Ecuador,2012,pbi_pc,5634.08
+ECU,Ecuador,2011,pbi_pc,5153.69
+ECU,Ecuador,2010,pbi_pc,4520.31
+ECU,Ecuador,2009,pbi_pc,4053.36
+ECU,Ecuador,2008,pbi_pc,4194.76
+ECU,Ecuador,2007,pbi_pc,3478.92
+ECU,Ecuador,2006,pbi_pc,3243.67
+ECU,Ecuador,2005,pbi_pc,2909.03
+ECU,Ecuador,2004,pbi_pc,2586.21
+ECU,Ecuador,2003,pbi_pc,2315.62
+ECU,Ecuador,2002,pbi_pc,2059.16
+ECU,Ecuador,2001,pbi_pc,1791.3
+ECU,Ecuador,2000,pbi_pc,1382.23
+GTM,Guatemala,2024,pbi_pc,6150.89
+GTM,Guatemala,2023,pbi_pc,5754.43
+GTM,Guatemala,2022,pbi_pc,5356.92
+GTM,Guatemala,2021,pbi_pc,4912.62
+GTM,Guatemala,2020,pbi_pc,4477.62
+GTM,Guatemala,2019,pbi_pc,4512.0
+GTM,Guatemala,2018,pbi_pc,4352.95
+GTM,Guatemala,2017,pbi_pc,4325.0
+GTM,Guatemala,2016,pbi_pc,4060.14
+GTM,Guatemala,2015,pbi_pc,3893.51
+GTM,Guatemala,2014,pbi_pc,3689.15
+GTM,Guatemala,2013,pbi_pc,3444.16
+GTM,Guatemala,2012,pbi_pc,3286.62
+GTM,Guatemala,2011,pbi_pc,3168.98
+GTM,Guatemala,2010,pbi_pc,2805.26
+GTM,Guatemala,2009,pbi_pc,2611.65
+GTM,Guatemala,2008,pbi_pc,2763.06
+GTM,Guatemala,2007,pbi_pc,2458.82
+GTM,Guatemala,2006,pbi_pc,2225.12
+GTM,Guatemala,2005,pbi_pc,2046.47
+GTM,Guatemala,2004,pbi_pc,1840.91
+GTM,Guatemala,2003,pbi_pc,1722.55
+GTM,Guatemala,2002,pbi_pc,1669.34
+GTM,Guatemala,2001,pbi_pc,1537.69
+GTM,Guatemala,2000,pbi_pc,1648.97
+HND,Honduras,2024,pbi_pc,3415.96
+HND,Honduras,2023,pbi_pc,3227.46
+HND,Honduras,2022,pbi_pc,3003.29
+HND,Honduras,2021,pbi_pc,2735.15
+HND,Honduras,2020,pbi_pc,2307.61
+HND,Honduras,2019,pbi_pc,2502.33
+HND,Honduras,2018,pbi_pc,2464.64
+HND,Honduras,2017,pbi_pc,2413.01
+HND,Honduras,2016,pbi_pc,2307.34
+HND,Honduras,2015,pbi_pc,2271.2
+HND,Honduras,2014,pbi_pc,2179.88
+HND,Honduras,2013,pbi_pc,2081.13
+HND,Honduras,2012,pbi_pc,2126.03
+HND,Honduras,2011,pbi_pc,2073.66
+HND,Honduras,2010,pbi_pc,1893.33
+HND,Honduras,2009,pbi_pc,1781.16
+HND,Honduras,2008,pbi_pc,1732.49
+HND,Honduras,2007,pbi_pc,1577.74
+HND,Honduras,2006,pbi_pc,1425.85
+HND,Honduras,2005,pbi_pc,1304.7
+HND,Honduras,2004,pbi_pc,1215.14
+HND,Honduras,2003,pbi_pc,1156.08
+HND,Honduras,2002,pbi_pc,1132.5
+HND,Honduras,2001,pbi_pc,1132.16
+HND,Honduras,2000,pbi_pc,1092.56
+MEX,Mexico,2024,pbi_pc,13988.04
+MEX,Mexico,2023,pbi_pc,13830.84
+MEX,Mexico,2022,pbi_pc,11405.79
+MEX,Mexico,2021,pbi_pc,10314.05
+MEX,Mexico,2020,pbi_pc,8841.27
+MEX,Mexico,2019,pbi_pc,10369.56
+MEX,Mexico,2018,pbi_pc,10084.79
+MEX,Mexico,2017,pbi_pc,9649.28
+MEX,Mexico,2016,pbi_pc,9097.92
+MEX,Mexico,2015,pbi_pc,10021.24
+MEX,Mexico,2014,pbi_pc,11391.38
+MEX,Mexico,2013,pbi_pc,11216.8
+MEX,Mexico,2012,pbi_pc,10744.13
+MEX,Mexico,2011,pbi_pc,10664.49
+MEX,Mexico,2010,pbi_pc,9728.8
+MEX,Mexico,2009,pbi_pc,8423.57
+MEX,Mexico,2008,pbi_pc,10523.77
+MEX,Mexico,2007,pbi_pc,10134.33
+MEX,Mexico,2006,pbi_pc,9512.64
+MEX,Mexico,2005,pbi_pc,8671.76
+MEX,Mexico,2004,pbi_pc,7849.67
+MEX,Mexico,2003,pbi_pc,7434.07
+MEX,Mexico,2002,pbi_pc,7983.03
+MEX,Mexico,2001,pbi_pc,7952.76
+MEX,Mexico,2000,pbi_pc,7524.03
+NIC,Nicaragua,2024,pbi_pc,2847.88
+NIC,Nicaragua,2023,pbi_pc,2609.44
+NIC,Nicaragua,2022,pbi_pc,2322.89
+NIC,Nicaragua,2021,pbi_pc,2138.39
+NIC,Nicaragua,2020,pbi_pc,1938.45
+NIC,Nicaragua,2019,pbi_pc,1958.62
+NIC,Nicaragua,2018,pbi_pc,2035.17
+NIC,Nicaragua,2017,pbi_pc,2182.61
+NIC,Nicaragua,2016,pbi_pc,2131.69
+NIC,Nicaragua,2015,pbi_pc,2074.46
+NIC,Nicaragua,2014,pbi_pc,1958.37
+NIC,Nicaragua,2013,pbi_pc,1835.44
+NIC,Nicaragua,2012,pbi_pc,1784.7
+NIC,Nicaragua,2011,pbi_pc,1679.71
+NIC,Nicaragua,2010,pbi_pc,1526.57
+NIC,Nicaragua,2009,pbi_pc,1467.08
+NIC,Nicaragua,2008,pbi_pc,1523.68
+NIC,Nicaragua,2007,pbi_pc,1350.38
+NIC,Nicaragua,2006,pbi_pc,1248.17
+NIC,Nicaragua,2005,pbi_pc,1183.3
+NIC,Nicaragua,2004,pbi_pc,1098.62
+NIC,Nicaragua,2003,pbi_pc,1021.35
+NIC,Nicaragua,2002,pbi_pc,1014.33
+NIC,Nicaragua,2001,pbi_pc,1051.87
+NIC,Nicaragua,2000,pbi_pc,1017.31
+PAN,Panama,2024,pbi_pc,19161.22
+PAN,Panama,2023,pbi_pc,18797.19
+PAN,Panama,2022,pbi_pc,17378.61
+PAN,Panama,2021,pbi_pc,15509.81
+PAN,Panama,2020,pbi_pc,13290.56
+PAN,Panama,2019,pbi_pc,16477.91
+PAN,Panama,2018,pbi_pc,16151.33
+PAN,Panama,2017,pbi_pc,15694.63
+PAN,Panama,2016,pbi_pc,14832.36
+PAN,Panama,2015,pbi_pc,14082.65
+PAN,Panama,2014,pbi_pc,13213.2
+PAN,Panama,2013,pbi_pc,12273.32
+PAN,Panama,2012,pbi_pc,11064.81
+PAN,Panama,2011,pbi_pc,9662.3
+PAN,Panama,2010,pbi_pc,8331.46
+PAN,Panama,2009,pbi_pc,7796.93
+PAN,Panama,2008,pbi_pc,7347.59
+PAN,Panama,2007,pbi_pc,6317.82
+PAN,Panama,2006,pbi_pc,5528.77
+PAN,Panama,2005,pbi_pc,5017.74
+PAN,Panama,2004,pbi_pc,4644.57
+PAN,Panama,2003,pbi_pc,4264.66
+PAN,Panama,2002,pbi_pc,4090.59
+PAN,Panama,2001,pbi_pc,3991.78
+PAN,Panama,2000,pbi_pc,3975.09
+PER,Peru,2024,pbi_pc,8526.3
+PER,Peru,2023,pbi_pc,7919.05
+PER,Peru,2022,pbi_pc,7353.75
+PER,Peru,2021,pbi_pc,6828.53
+PER,Peru,2020,pbi_pc,6133.33
+PER,Peru,2019,pbi_pc,7037.01
+PER,Peru,2018,pbi_pc,6978.49
+PER,Peru,2017,pbi_pc,6736.17
+PER,Peru,2016,pbi_pc,6217.04
+PER,Peru,2015,pbi_pc,6231.71
+PER,Peru,2014,pbi_pc,6667.13
+PER,Peru,2013,pbi_pc,6746.8
+PER,Peru,2012,pbi_pc,6519.38
+PER,Peru,2011,pbi_pc,5861.36
+PER,Peru,2010,pbi_pc,5072.11
+PER,Peru,2009,pbi_pc,4181.19
+PER,Peru,2008,pbi_pc,4197.58
+PER,Peru,2007,pbi_pc,3581.09
+PER,Peru,2006,pbi_pc,3129.56
+PER,Peru,2005,pbi_pc,2706.67
+PER,Peru,2004,pbi_pc,2397.25
+PER,Peru,2003,pbi_pc,2129.44
+PER,Peru,2002,pbi_pc,2007.37
+PER,Peru,2001,pbi_pc,1929.57
+PER,Peru,2000,pbi_pc,1945.41
+PRY,Paraguay,2024,pbi_pc,6456.61
+PRY,Paraguay,2023,pbi_pc,6303.26
+PRY,Paraguay,2022,pbi_pc,6189.1
+PRY,Paraguay,2021,pbi_pc,5974.91
+PRY,Paraguay,2020,pbi_pc,5365.47
+PRY,Paraguay,2019,pbi_pc,5821.18
+PRY,Paraguay,2018,pbi_pc,6258.45
+PRY,Paraguay,2017,pbi_pc,6152.27
+PRY,Paraguay,2016,pbi_pc,5775.16
+PRY,Paraguay,2015,pbi_pc,5879.34
+PRY,Paraguay,2014,pbi_pc,6652.25
+PRY,Paraguay,2013,pbi_pc,6435.68
+PRY,Paraguay,2012,pbi_pc,5642.17
+PRY,Paraguay,2011,pbi_pc,5805.4
+PRY,Paraguay,2010,pbi_pc,4750.96
+PRY,Paraguay,2009,pbi_pc,3941.85
+PRY,Paraguay,2008,pbi_pc,4384.95
+PRY,Paraguay,2007,pbi_pc,3211.94
+PRY,Paraguay,2006,pbi_pc,2439.43
+PRY,Paraguay,2005,pbi_pc,1970.87
+PRY,Paraguay,2004,pbi_pc,1786.22
+PRY,Paraguay,2003,pbi_pc,1444.0
+PRY,Paraguay,2002,pbi_pc,1367.77
+PRY,Paraguay,2001,pbi_pc,1637.69
+PRY,Paraguay,2000,pbi_pc,1736.12
+SLV,El Salvador,2024,pbi_pc,5503.1
+SLV,El Salvador,2023,pbi_pc,5319.72
+SLV,El Salvador,2022,pbi_pc,5074.6
+SLV,El Salvador,2021,pbi_pc,4642.61
+SLV,El Salvador,2020,pbi_pc,3997.19
+SLV,El Salvador,2019,pbi_pc,4320.12
+SLV,El Salvador,2018,pbi_pc,4183.55
+SLV,El Salvador,2017,pbi_pc,4020.13
+SLV,El Salvador,2016,pbi_pc,3901.34
+SLV,El Salvador,2015,pbi_pc,3790.34
+SLV,El Salvador,2014,pbi_pc,3666.01
+SLV,El Salvador,2013,pbi_pc,3582.27
+SLV,El Salvador,2012,pbi_pc,3497.91
+SLV,El Salvador,2011,pbi_pc,3330.6
+SLV,El Salvador,2010,pbi_pc,3040.07
+SLV,El Salvador,2009,pbi_pc,2910.19
+SLV,El Salvador,2008,pbi_pc,2983.25
+SLV,El Salvador,2007,pbi_pc,2830.66
+SLV,El Salvador,2006,pbi_pc,2665.62
+SLV,El Salvador,2005,pbi_pc,2447.39
+SLV,El Salvador,2004,pbi_pc,2285.69
+SLV,El Salvador,2003,pbi_pc,2207.83
+SLV,El Salvador,2002,pbi_pc,2115.41
+SLV,El Salvador,2001,pbi_pc,2058.04
+SLV,El Salvador,2000,pbi_pc,1982.87
+URY,Uruguay,2024,pbi_pc,24308.5
+URY,Uruguay,2023,pbi_pc,23378.64
+URY,Uruguay,2022,pbi_pc,21009.29
+URY,Uruguay,2021,pbi_pc,17881.81
+URY,Uruguay,2020,pbi_pc,15757.53
+URY,Uruguay,2019,pbi_pc,18315.74
+URY,Uruguay,2018,pbi_pc,19249.94
+URY,Uruguay,2017,pbi_pc,19184.66
+URY,Uruguay,2016,pbi_pc,17009.76
+URY,Uruguay,2015,pbi_pc,17125.9
+URY,Uruguay,2014,pbi_pc,18322.43
+URY,Uruguay,2013,pbi_pc,18335.26
+URY,Uruguay,2012,pbi_pc,16259.59
+URY,Uruguay,2011,pbi_pc,15132.27
+URY,Uruguay,2010,pbi_pc,12641.06
+URY,Uruguay,2009,pbi_pc,9881.4
+URY,Uruguay,2008,pbi_pc,9423.97
+URY,Uruguay,2007,pbi_pc,7222.05
+URY,Uruguay,2006,pbi_pc,6001.33
+URY,Uruguay,2005,pbi_pc,5284.26
+URY,Uruguay,2004,pbi_pc,4168.66
+URY,Uruguay,2003,pbi_pc,3671.12
+URY,Uruguay,2002,pbi_pc,4149.76
+URY,Uruguay,2001,pbi_pc,6382.76
+URY,Uruguay,2000,pbi_pc,6987.7
+VEN,Venezuela,2024,pbi_pc,4244.46
+VEN,Venezuela,2023,pbi_pc,3617.47
+VEN,Venezuela,2022,pbi_pc,3155.04
+VEN,Venezuela,2021,pbi_pc,2004.94
+VEN,Venezuela,2020,pbi_pc,1506.04
+VEN,Venezuela,2019,pbi_pc,2523.12
+VEN,Venezuela,2018,pbi_pc,3421.51
+VEN,Venezuela,2017,pbi_pc,3791.63
+VEN,Venezuela,2016,pbi_pc,3671.23
+VEN,Venezuela,2015,pbi_pc,4096.62
+VEN,Venezuela,2014,pbi_pc,7101.15
+VEN,Venezuela,2013,pbi_pc,8642.37
+VEN,Venezuela,2012,pbi_pc,12582.01
+VEN,Venezuela,2011,pbi_pc,10843.92
+VEN,Venezuela,2010,pbi_pc,13646.3
+VEN,Venezuela,2009,pbi_pc,11596.6
+VEN,Venezuela,2008,pbi_pc,11262.45
+VEN,Venezuela,2007,pbi_pc,8331.62
+VEN,Venezuela,2006,pbi_pc,6739.38
+VEN,Venezuela,2005,pbi_pc,5432.49
+VEN,Venezuela,2004,pbi_pc,4269.09
+VEN,Venezuela,2003,pbi_pc,3229.51
+VEN,Venezuela,2002,pbi_pc,3652.1
+VEN,Venezuela,2001,pbi_pc,4920.39
+VEN,Venezuela,2000,pbi_pc,4776.28
