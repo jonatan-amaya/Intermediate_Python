@@ -1,0 +1,23 @@
+1
+00:00:00,000 --> 00:00:11,109
+¿Sabías que en un solo año la pobreza en Perú saltó de veinte a treinta por ciento? En 2020, la pandemia empujó a casi tres millones de personas a la pobreza.
+
+2
+00:00:11,410 --> 00:00:23,789
+Hoy, en 2024, la pobreza se ubica en 27,6 por ciento: sigue siete puntos por encima del nivel prepandemia. La recuperación aún no cierra la brecha.
+
+3
+00:00:24,090 --> 00:00:37,190
+La región está profundamente dividida: Honduras registra 62,9 por ciento de pobreza, más del doble que Uruguay, con 17,3. Perú se ubica en la mitad de la tabla.
+
+4
+00:00:37,490 --> 00:00:50,570
+Los caminos también difieren. Entre 2000 y 2024, Ecuador redujo su pobreza en 36 puntos. Costa Rica, en cambio, apenas avanzó tres décimas.
+
+5
+00:00:50,870 --> 00:01:00,110
+Y la desigualdad sigue siendo un reto: el índice Gini de Perú bajó a 40,1, pero aún está por encima de referentes como Uruguay.
+
+6
+00:01:00,410 --> 00:01:12,550
+Explora el dashboard interactivo con los datos de dieciocho países, de 2000 a 2024. El enlace está en la descripción. Fuente: Banco Mundial.
