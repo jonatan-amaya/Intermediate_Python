@@ -1,0 +1,10 @@
+# Tarea 3 - voz y materia prima (local, no se versiona)
+reel/recursos/mi_voz.m4a
+reel/recursos/mi_voz*.wav
+reel/recursos/voz_escena*.wav
+reel/recursos/voz_escena*.mp3
+reel/recursos/_respaldo_ref/
+reel/recursos/_prueba_*.wav
+reel/recursos/musica.wav
+reel/recursos/_verificacion_*.png
+scripts/reel/_*.py

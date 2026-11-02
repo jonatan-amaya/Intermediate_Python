@@ -88,10 +88,16 @@ python scripts/obtener_datos.py && python scripts/procesar_datos.py && python sc
 # 4) dashboard local
 cd web && python -m http.server 8000     # http://localhost:8000
 
-# 5) reel (gráficos + narración TTS + música + video)
+# 5) reel (gráficos + narración clonada + música + video)
 python scripts/reel/crear_graficos_reel.py
+# 5a) narración con tu propia voz: graba 15-25 s, guarda el audio como
+#     reel/recursos/mi_voz.wav (16 kHz mono) y ejecuta:
+python scripts/reel/clonar_voz_f5.py     # F5-TTS clona tu voz y genera las 6 escenas
 python scripts/reel/generar_reel.py      # genera reel/reel.mp4, subtitulos.srt, guion.json
 ```
+
+> La muestra de voz (`mi_voz.*`) y las voces por escena **no se versionan** (privacidad);
+> el reel publicado sí incluye la narración clonada.
 
 El dashboard de producción se sirve desde GitHub Pages (rama `main`, carpeta raíz →
 URL `/tarea_3/web/`).

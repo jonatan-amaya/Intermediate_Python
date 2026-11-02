@@ -1,43 +1,43 @@
 {
-  "voz": "es-PE-AlexNeural",
+  "voz": "clonada del estudiante (F5-TTS, referencia reel/recursos/mi_voz.wav)",
   "formato": "1080x1920 (9:16)",
-  "duracion_s": 72.9,
+  "duracion_s": 64.5,
   "escenas": [
     {
       "imagen": "escena1_gancho.png",
       "narracion": "¿Sabías que en un solo año la pobreza en Perú saltó de veinte a treinta por ciento? En 2020, la pandemia empujó a casi tres millones de personas a la pobreza.",
       "inicio_s": 0.0,
-      "fin_s": 11.1
+      "fin_s": 11.2
     },
     {
       "imagen": "escena2_peru.png",
       "narracion": "Hoy, en 2024, la pobreza se ubica en 27 coma 6 por ciento: sigue siete puntos por encima del nivel prepandemia. La recuperación aún no cierra la brecha.",
-      "inicio_s": 11.4,
-      "fin_s": 23.8
+      "inicio_s": 11.5,
+      "fin_s": 22.0
     },
     {
       "imagen": "escena3_region.png",
       "narracion": "La región está profundamente dividida: Honduras registra 62 coma 9 por ciento de pobreza, más del doble que Uruguay, con 17 coma 3. Perú se ubica en la mitad de la tabla.",
-      "inicio_s": 24.1,
-      "fin_s": 37.2
+      "inicio_s": 22.3,
+      "fin_s": 34.1
     },
     {
       "imagen": "escena4_reducciones.png",
       "narracion": "Los caminos también difieren. Entre 2000 y 2024, Ecuador redujo su pobreza en 36 puntos. Costa Rica, en cambio, apenas avanzó tres décimas.",
-      "inicio_s": 37.5,
-      "fin_s": 50.6
+      "inicio_s": 34.4,
+      "fin_s": 44.3
     },
     {
       "imagen": "escena5_gini.png",
-      "narracion": "Y la desigualdad sigue siendo un reto: el índice Gini de Perú bajó a 40 coma 1, pero aún está por encima de referentes como Uruguay.",
-      "inicio_s": 50.9,
-      "fin_s": 60.1
+      "narracion": "Y la desigualdad también preocupa: Perú redujo su coeficiente de Gini a 40 coma 1, pero sigue por encima de referentes como Uruguay.",
+      "inicio_s": 44.6,
+      "fin_s": 53.9
     },
     {
       "imagen": "escena6_cierre.png",
       "narracion": "Explora el dashboard interactivo con los datos de dieciocho países, de 2000 a 2024. El enlace está en la descripción. Fuente: Banco Mundial.",
-      "inicio_s": 60.4,
-      "fin_s": 72.6
+      "inicio_s": 54.2,
+      "fin_s": 64.2
     }
   ]
 }

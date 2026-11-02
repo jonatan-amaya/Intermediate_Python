@@ -38,8 +38,8 @@ ESCENAS = [
      "texto": "Los caminos también difieren. Entre 2000 y 2024, Ecuador redujo su "
               "pobreza en 36 puntos. Costa Rica, en cambio, apenas avanzó tres décimas."},
     {"imagen": "escena5_gini.png",
-     "texto": "Y la desigualdad sigue siendo un reto: el índice Gini de Perú bajó a 40 "
-              "coma 1, pero aún está por encima de referentes como Uruguay."},
+     "texto": "Y la desigualdad también preocupa: Perú redujo su coeficiente de "
+              "Gini a 40 coma 1, pero sigue por encima de referentes como Uruguay."},
     {"imagen": "escena6_cierre.png",
      "texto": "Explora el dashboard interactivo con los datos de dieciocho países, de "
               "2000 a 2024. El enlace está en la descripción. Fuente: Banco Mundial."},
