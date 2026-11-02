@@ -1,0 +1,88 @@
+[
+  {
+    "paso": 1,
+    "tipo": "MCP.buscar_series",
+    "detalle": "ipc 12 meses (Mensual)",
+    "resultado": [
+      "PN01273PM Índice de precios Lima Metropolitana (var% 12 meses) - IPC",
+      "PN09821PM Índice de precios Lima Metropolitana (var% 12 meses) - IPC I",
+      "PN01279PM Índice de precios Lima Metropolitana (var% 12 meses) - IPC S"
+    ]
+  },
+  {
+    "paso": 2,
+    "tipo": "MCP.buscar_series",
+    "detalle": "tipo de cambio fin de periodo venta",
+    "resultado": [
+      "PN01218PM Tipo de cambio - fin de periodo (S/ por US$) - Bancario - Ve",
+      "PN01221PM Tipo de cambio - fin de periodo (S/ por US$) - Informal - Ve",
+      "PN01215PM Tipo de cambio - fin de periodo (S/ por US$) - Interbancario"
+    ]
+  },
+  {
+    "paso": 3,
+    "tipo": "MCP.serie",
+    "detalle": "PN01273PM 2020-01..2024-12",
+    "resultado": "60 periodos; fuente https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PN0"
+  },
+  {
+    "paso": 4,
+    "tipo": "MCP.resumen",
+    "detalle": "PN01273PM 2020-2024",
+    "resultado": {
+      "min": {
+        "periodo": "2020-06",
+        "valor": 1.59873239164688
+      },
+      "max": {
+        "periodo": "2022-06",
+        "valor": 8.81263294388897
+      },
+      "promedio": 4.4664
+    }
+  },
+  {
+    "paso": 5,
+    "tipo": "MCP.serie+resumen",
+    "detalle": "PN01215PM 2020-2024",
+    "resultado": {
+      "primero": {
+        "periodo": "2020-01",
+        "valor": 3.3784
+      },
+      "ultimo": {
+        "periodo": "2024-12",
+        "valor": 3.7688
+      },
+      "variacion_pct": 11.56
+    }
+  },
+  {
+    "paso": 6,
+    "tipo": "MCP.correlacion",
+    "detalle": "PN01273PM vs PN01215PM 2020-2024",
+    "resultado": {
+      "r": 0.4973,
+      "n": 60,
+      "guia": "correlacion positiva moderada (r=0.4973)"
+    }
+  },
+  {
+    "paso": 7,
+    "tipo": "Skill.limpiando-enaho",
+    "detalle": "limpiar.py (1.2s)",
+    "resultado": "OK"
+  },
+  {
+    "paso": 8,
+    "tipo": "Skill.graficando-enaho",
+    "detalle": "graficar.py todos (1.3s)",
+    "resultado": "OK"
+  },
+  {
+    "paso": 9,
+    "tipo": "Skill.mapeando-enaho",
+    "detalle": "mapear.py (1.3s)",
+    "resultado": "OK"
+  }
+]

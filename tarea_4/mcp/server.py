@@ -117,10 +117,21 @@ def _periodo_iso(nombre: str, frecuencia: str) -> str:
     return f"{partes[1]}-{_MESES[partes[0]]:02d}"
 
 
+def _clave_periodo(p: str):
+    if "-T" in p:
+        a, t = p.split("-T")
+        return (int(a), int(t))
+    if p.count("-") == 2:
+        a, m, d = p.split("-")
+        return (int(a), int(m), int(d))
+    a, m = p.split("-")
+    return (int(a), int(m))
+
+
 @cache
 def _descargar(codigo: str, desde: str, hasta: str) -> list[dict]:
     """GET a la API con reintentos; si el BCRP responde HTML (anti-bot), usa la
-    caché local de respuestas reales generada con scripts/descargar_serie.py."""
+    caché local (datos/cache_bcrp/) buscando un archivo que CUBRA el rango."""
     url = f"{API}/{codigo}/json/{desde}/{hasta}"
     respuesta = None
     ultimo = None
@@ -137,12 +148,28 @@ def _descargar(codigo: str, desde: str, hasta: str) -> list[dict]:
             ultimo = str(e)
         time.sleep(2 + 2 * intento)
     if respuesta is None:
-        cache = _CACHE / f"{codigo}_{desde}_{hasta}.json"
-        if cache.exists():
-            return json.loads(cache.read_text(encoding="utf-8"))["periods"]
-        raise ToolError(
-            f"La API del BCRP no respondió JSON para {codigo} ({desde} a {hasta}): {ultimo}. "
-            f"Precarguen la serie con: uv run scripts/descargar_serie.py {codigo} {desde} {hasta}")
+        cubre = []
+        for cache in sorted(_CACHE.glob(f"{codigo}_*.json")):
+            try:
+                _, d, h = cache.stem.split("_")
+                if _clave_periodo(d) <= _clave_periodo(desde) and \
+                   _clave_periodo(h) >= _clave_periodo(hasta):
+                    cubre.append((cache, d, h))
+            except ValueError:
+                continue
+        if cubre:
+            # preferir el archivo mas chico que cubra el rango
+            cache = min(cubre, key=lambda t: len(t[0].read_text(encoding="utf-8")))[0]
+            periodos = json.loads(cache.read_text(encoding="utf-8"))["periods"]
+            respuesta = [p for p in periodos
+                         if _clave_periodo(_periodo_iso(p["name"], _ficha(codigo)["frecuencia"]))
+                         >= _clave_periodo(desde)
+                         and _clave_periodo(_periodo_iso(p["name"], _ficha(codigo)["frecuencia"]))
+                         <= _clave_periodo(hasta)]
+        else:
+            raise ToolError(
+                f"La API del BCRP no respondió JSON para {codigo} ({desde} a {hasta}): {ultimo}. "
+                f"Precarguen con: uv run scripts/descargar_serie.py {codigo} {desde} {hasta}")
     return respuesta
 
 

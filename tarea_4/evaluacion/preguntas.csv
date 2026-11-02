@@ -1,0 +1,11 @@
+id,tipo,pregunta,respuesta_esperada
+B1,BCRP,"¿Cuál fue la inflación interanual (IPC Lima, var% 12 meses) en diciembre 2024?","1.97 % (PN01273PM, 2024-12)"
+B2,BCRP,¿Cuál fue el tipo de cambio interbancario venta (fin de periodo) en diciembre 2024?,"S/ 3.7688 por US$ (PN01215PM, 2024-12)"
+B3,BCRP,"Entre 2020 y 2024, ¿en qué mes y año se dio el máximo de la inflación interanual y cuánto fue?","2022-06, 8.81 % (PN01273PM)"
+B4,BCRP,¿Cuál es la tasa de referencia de la política monetaria en el último dato disponible?,"4.25 % (PD04722MM, oct-2026)"
+E1,ENAHO,"¿Cuál fue la pobreza monetaria nacional en la ENAHO 2024 (personas, ponderada)?",27.53 % (oficial INEI 27.6 %)
+E2,ENAHO,¿Cuál fue la pobreza monetaria rural 2024 (ponderada)?,39.44 % (referencia 39.3 %)
+E3,ENAHO,¿Cuál fue la pobreza monetaria en el departamento de Cusco en 2024?,18.54 % (referencia 18.5 %)
+E4,ENAHO,¿Qué departamento tuvo la mayor pobreza monetaria 2024 y cuál fue su tasa?,"Cajamarca (06), 44.99 %"
+C1,Combinada,¿Inflación (dic-2024) y pobreza nacional (2024)? Da ambas cifras y di si cada una está lejos de su pico 2020-2024 (sin afirmar causalidad).,"IPC 1.97 % (pico 8.81 %, 2022-06); pobreza 27.53 %"
+C2,Combinada,¿La brecha urbano-rural de pobreza 2024 fue mayor que la brecha de género? Responde con cifras y agrega el tipo de cambio de dic-2024 como contexto macro.,Sí: 14.70 pts (39.44 vs 24.74) vs 0.28 pts; TC 3.7688
