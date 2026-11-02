@@ -1,0 +1,14 @@
+VALIDACION ENAHO 2024 · Skill limpiando-enaho
+Modulos: sumaria-2024.dta + enaho01-2024-200.dta
+Personas (residentes habituales): 108,664
+Pobreza nacional ponderada (facpob07): 27.53 %
+
+Checks:
+  [OK] Residentes habituales == 108,664 -> 108,664
+  [OK] Pobreza nacional dentro de 27.6 +/- 0.1 -> 27.53 %
+  [OK] Pobreza extrema ~ 5.5 % -> 5.50 %
+  [OK] Pobreza urbana ~ 24.8 % -> 24.74 %
+  [OK] Pobreza rural ~ 39.3 % -> 39.44 %
+  [OK] 25 departamentos identificados -> 25
+  [OK] Sin perdidas en la union (todos tienen pobreza) -> faltan 0
+  [OK] Factor de expansion presente y positivo -> min 1.12

@@ -1,0 +1,31 @@
+VALIDACION MAPA · Skill mapeando-enaho
+Unidades territoriales: 25/25 (todas con dato)
+Lima (15) y Callao (07) separados: OK
+
+  [OK] 01: calculado 26.1 vs referencia 25.7 (dif 0.38)
+  [OK] 02: calculado 22.9 vs referencia 22.8 (dif 0.08)
+  [OK] 03: calculado 24.1 vs referencia 24.0 (dif 0.09)
+  [OK] 04: calculado 15.8 vs referencia 15.8 (dif 0.03)
+  [OK] 05: calculado 33.0 vs referencia 32.8 (dif 0.24)
+  [OK] 06: calculado 45.0 vs referencia 45.0 (dif 0.01)
+  [OK] 07: calculado 33.8 vs referencia 33.9 (dif 0.13)
+  [OK] 08: calculado 18.5 vs referencia 18.5 (dif 0.04)
+  [OK] 09: calculado 33.6 vs referencia 33.4 (dif 0.21)
+  [OK] 10: calculado 39.5 vs referencia 39.0 (dif 0.47)
+  [OK] 11: calculado 5.9 vs referencia 6.0 (dif 0.09)
+  [OK] 12: calculado 18.6 vs referencia 18.5 (dif 0.11)
+  [OK] 13: calculado 30.1 vs referencia 30.2 (dif 0.13)
+  [OK] 14: calculado 14.1 vs referencia 14.0 (dif 0.05)
+  [OK] 15: calculado 26.9 vs referencia 27.1 (dif 0.21)
+  [OK] 16: calculado 42.6 vs referencia 43.0 (dif 0.39)
+  [OK] 17: calculado 11.1 vs referencia 11.1 (dif 0.04)
+  [OK] 18: calculado 10.9 vs referencia 11.0 (dif 0.12)
+  [OK] 19: calculado 39.3 vs referencia 39.0 (dif 0.28)
+  [OK] 20: calculado 31.8 vs referencia 31.9 (dif 0.09)
+  [OK] 21: calculado 40.4 vs referencia 39.9 (dif 0.52)
+  [OK] 22: calculado 22.0 vs referencia 22.0 (dif 0.01)
+  [OK] 23: calculado 23.9 vs referencia 24.0 (dif 0.12)
+  [OK] 24: calculado 26.6 vs referencia 26.9 (dif 0.30)
+  [OK] 25: calculado 27.1 vs referencia 27.1 (dif 0.02)
+
+Maxima diferencia vs referencia: 0.52 puntos
