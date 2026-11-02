@@ -19,7 +19,7 @@ from moviepy.editor import (AudioFileClip, CompositeAudioClip, ImageClip,
 BASE = Path(__file__).resolve().parent.parent.parent
 REC = BASE / "reel" / "recursos"
 REEL = BASE / "reel"
-VOZ = "es-PE-AlexNeural"
+VOZ = "clonada del estudiante (F5-TTS, referencia reel/recursos/mi_voz.wav)"
 
 ESCENAS = [
     {"imagen": "escena1_gancho.png",
@@ -57,13 +57,19 @@ async def narrar(texto, destino):
 
 
 def generar_narraciones():
+    """Genera voces solo cuando no existe ni la voz clonada (.wav) ni la de referencia (.mp3)."""
     for i, esc in enumerate(ESCENAS, 1):
-        mp3 = REC / f"voz_escena{i}.mp3"
-        if mp3.exists() and mp3.stat().st_size > 1000:
-            print(f"[ok] voz escena {i}")
+        if (REC / f"voz_escena{i}.wav").exists() or (REC / f"voz_escena{i}.mp3").exists():
+            print(f"[ok] voz escena {i} (existente)")
             continue
+        mp3 = REC / f"voz_escena{i}.mp3"
         print(f"[tts] escena {i} ({VOZ})...")
         asyncio.run(narrar(esc["texto"], mp3))
+
+
+def voz_escena(i):
+    wav = REC / f"voz_escena{i}.wav"
+    return wav if wav.exists() else REC / f"voz_escena{i}.mp3"
 
 
 def generar_musica(duracion, ruta):
@@ -99,7 +105,7 @@ def ensamblar():
     clips_video, tiempos = [], []
     inicio = 0.0
     for i, esc in enumerate(ESCENAS, 1):
-        audio = AudioFileClip(str(REC / f"voz_escena{i}.mp3"))
+        audio = AudioFileClip(str(voz_escena(i)))
         dur = max(audio.duration + 0.3, 5.0)
         clip = (ImageClip(str(REC / esc["imagen"]))
                 .set_duration(dur).set_audio(audio))

@@ -3,6 +3,11 @@ pandas==3.0.6
 requests==2.34.2
 matplotlib==3.11.2
 numpy==2.4.6
-moviepy==2.2.1
-edge-tts==7.2.7
-Pillow==11.3.0
+moviepy==1.0.3
+edge-tts==7.3.1
+Pillow==12.3.0
+# --- clonacion de voz (Parte 3) ---
+f5-tts==1.1.22
+faster-whisper==1.2.1
+soundfile==0.14.0
+# voxcpm==2.0.3 evaluado y descartado (no soporta espanol)

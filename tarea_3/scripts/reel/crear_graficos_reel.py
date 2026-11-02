@@ -139,8 +139,9 @@ fig.text(0.08, 0.62, "Explora el dashboard\ninteractivo con los 18 países\n2000
          fontsize=52, weight="bold", va="top")
 fig.text(0.08, 0.44, "jonatan-amaya.github.io/\nIntermediate_Python/tarea_3/web/",
          fontsize=34, color=AZUL, weight="bold")
-fig.text(0.08, 0.10, "Voz generada con IA (edge-tts) · Música sintetizada · "
-         "Datos: Banco Mundial\nTarea 3 - Data Science Python - Jonatan Amaya",
+fig.text(0.08, 0.10, "Voz clonada con IA a partir de la voz del autor (F5-TTS) · "
+         "Musica sintetizada · Datos: Banco Mundial\n"
+         "Tarea 3 - Data Science Python - Jonatan Amaya",
          fontsize=22, color=MUTED)
 img = plt.imread(BASE / "imgs" / "dashboard_kpis_mapa.png")
 ax_img = fig.add_axes([0.08, 0.68, 0.84, 0.27]); ax_img.imshow(img)

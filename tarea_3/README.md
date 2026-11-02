@@ -100,11 +100,12 @@ URL `/tarea_3/web/`).
 
 Se utilizó IA asistente (agente de código) en **todas las etapas**: diseño del tema,
 descarga y limpieza de datos, construcción del dashboard, generación de los gráficos del
-reel, redacción del guion, **narración de voz sintética** (`edge-tts`, voz neuronal de
-referencia es-PE en ausencia de una muestra de voz propia — pendiente de reemplazo por
-clonación de voz del estudiante), **música sintetizada por código** (sin derechos de
-autor) y ensamblado del video. Las cifras fueron verificadas contra la fuente oficial y
-la responsabilidad del contenido es del estudiante.
+reel, redacción del guion, **clonación de la voz del estudiante** (se grabó una muestra
+de 16 s de voz propia en `reel/recursos/mi_voz.wav` y con F5-TTS + whisper se generaron
+las narraciones; VoxCPM2 se evaluó y descartó por no soportar español), **música
+sintetizada por código** (sin derechos de autor) y ensamblado del video con moviepy.
+Las cifras fueron verificadas contra la fuente oficial y la responsabilidad del
+contenido es del estudiante.
 
 ---
 
