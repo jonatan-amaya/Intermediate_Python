@@ -1,0 +1,9 @@
+# Tarea 4 - no versionar
+.venv/
+__pycache__/
+.pytest_cache/
+datos/*.zip
+datos/raw34/
+datos/raw02/
+*.parquet
+.claude/settings.local.json

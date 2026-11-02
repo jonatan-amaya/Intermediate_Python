@@ -1,0 +1,16 @@
+[project]
+name = "agente-investigacion-bcrp-enaho"
+version = "0.1.0"
+description = "Tarea 4 - agente de investigación socioeconómica (MCP BCRP + Skills ENAHO)"
+requires-python = ">=3.11"
+dependencies = [
+    "fastmcp>=2",
+    "httpx",
+    "pandas",
+    "pyarrow",
+    "geopandas",
+    "matplotlib",
+]
+
+[dependency-groups]
+dev = ["pytest>=8"]
