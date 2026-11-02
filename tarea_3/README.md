@@ -70,9 +70,11 @@ regionales son medias simples de países con dato en cada año.
 
 - **Dashboard público:** https://jonatan-amaya.github.io/Intermediate_Python/tarea_3/web/
 - **Repositorio:** https://github.com/jonatan-amaya/Intermediate_Python/tree/main/tarea_3
-- **Publicación de LinkedIn:** *[pendiente — el estudiante publica el reel y pega aquí el enlace]*
-  (alternativa sin LinkedIn: el reel está en `reel/reel.mp4` y es visible en el
-  repositorio público; este README incluye imágenes del dashboard y hallazgos).
+- **Reel (entrega alternativa sin LinkedIn):**
+  https://github.com/jonatan-amaya/Intermediate_Python/blob/main/tarea_3/reel/reel.mp4 —
+  GitHub reproduce el video directamente en el navegador, sin pedir permisos
+  (modalidad alternativa autorizada por el enunciado; en este README están las
+  imágenes del dashboard y los hallazgos principales, como pide esa modalidad).
 
 ![Dashboard - controles y mapa completo](imgs/dashboard_controles_mapa.png)
 
